@@ -1,0 +1,35 @@
+/* Design tokens from the v2 design §1 (palette v2). Defined on :host so they live inside the UI's shadow root. */
+:host {
+  --bg: #0e1218;
+  --surface: #161c24;
+  --surface-2: #1c232d;
+  --surface-hover: #1c232d;
+  --border: #2a333f;
+  --accent: #e6a14a;
+  --accent-soft: rgba(230, 161, 74, 0.12);
+  --accent-strong: #f0b46a;
+  --text: #e8e6de;
+  --text-muted: #9aa6b2;
+  --text-disabled: #5e6875;
+  --scrollbar-thumb: #2f3946;
+  --scrollbar-thumb-hover: #46525f;
+
+  --res-fire: #e0703a;
+  --res-cold: #5aa9e6;
+  --res-lightning: #e8c547;
+  --res-chaos: #a57bd8;
+
+  --rarity-unique: #e8a15a;
+  --rarity-rare: #e8d98a;
+  --rarity-magic: #8fa8ff;
+  --rarity-normal: #e8e6d9;
+
+  --online: #5cb85c;
+  --afk: #e8c547;
+  --offline: #5e6875;
+  --danger: #d9534f;
+
+  --font: 'poe2perfect trade Inter', Inter, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --radius-card: 8px;
+  --radius-control: 6px;
+}

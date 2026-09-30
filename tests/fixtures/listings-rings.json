@@ -1,0 +1,1149 @@
+{
+ "meta": {
+  "league": "Forbidden Rites",
+  "capturedAt": "2026-09-23T16:24:24.177Z"
+ },
+ "request": {
+  "query": {
+   "status": {
+    "option": "online"
+   },
+   "stats": [
+    {
+     "type": "and",
+     "filters": [
+      {
+       "id": "pseudo.pseudo_total_life",
+       "value": {
+        "min": 80
+       }
+      },
+      {
+       "id": "pseudo.pseudo_total_fire_resistance",
+       "value": {
+        "min": 35
+       }
+      },
+      {
+       "id": "pseudo.pseudo_total_cold_resistance",
+       "value": {
+        "min": 30
+       }
+      }
+     ]
+    }
+   ],
+   "filters": {
+    "type_filters": {
+     "filters": {
+      "category": {
+       "option": "accessory.ring"
+      },
+      "rarity": {
+       "option": "rare"
+      }
+     }
+    },
+    "trade_filters": {
+     "filters": {
+      "price": {
+       "option": "exalted",
+       "max": 50
+      }
+     }
+    }
+   }
+  },
+  "sort": {
+   "price": "asc"
+  }
+ },
+ "search": {
+  "id": "H4sIAAAAAAAAA31Q0QqDMAz8lzyLDIYw_JUhEtoogdpKGodD_PfF-aKM2Ze2d7lLcgtkRZ0y1AukUTlFqCHFwJFgLb6kcc8F9D2SURg9FNBxUJKdYG_wmGnyqdyvVpNiaAN3ZLUvDBNt9gOb9-O2rsWFqGOhViizdY7uV3-vrvUuBX-pt_7N2hxW2FdrD__D06FSn-R9igedo5wNLYVjv8UkKKznIoMsQRsWVND_8x-FHZ10NKOxW8gDzlBXNq-dD-0f-oanAQAA",
+  "total": 5,
+  "result": [
+   "53b02495e98b35e88d47f2c5b48e650a243189ee9c356deb396967f0d5301f8d",
+   "a4677593778ff308baf724e08040cc645b76050d5ed7b22cc5198481b284fadb",
+   "a66c8c8ace6ec64d25764e7c1950022d154368ce3624cc487bcd40121d5e0a25",
+   "7ff2418b333ec68b6e530556a7e90b57891b99298b1d158c9f4dea1cdd42588e",
+   "9422e5eb56011729ef87296e06fd64e292cb983eeebad5a1ee983f9c0d4a8dcc"
+  ]
+ },
+ "listings": [
+  {
+   "id": "53b02495e98b35e88d47f2c5b48e650a243189ee9c356deb396967f0d5301f8d",
+   "listing": {
+    "method": "psapi",
+    "indexed": "2026-09-20T20:04:19Z",
+    "stash": {
+     "name": "Stash",
+     "x": 17,
+     "y": 9
+    },
+    "price": {
+     "type": "~price",
+     "amount": 5,
+     "currency": "exalted"
+    },
+    "account": {
+     "name": "Seller1#0001",
+     "online": {
+      "league": "Forbidden Rites"
+     },
+     "lastCharacterName": "Character1",
+     "language": "en_US",
+     "realm": "poe2"
+    },
+    "whisper": "@Character1 Hi, I would like to buy your Maelström Hold Ruby Ring listed for 5 exalted in Forbidden Rites (stash tab \"Stash\"; position: left 18, top 10)",
+    "whisper_token": "scrubbed"
+   },
+   "item": {
+    "realm": "poe2",
+    "verified": true,
+    "w": 1,
+    "h": 1,
+    "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvQmFzZXR5cGVzL1J1YnlSaW5nIiwidyI6MSwiaCI6MSwic2NhbGUiOjEsInJlYWxtIjoicG9lMiJ9XQ/4f0e6f99c1/RubyRing.png",
+    "league": "Forbidden Rites",
+    "id": "53b02495e98b35e88d47f2c5b48e650a243189ee9c356deb396967f0d5301f8d",
+    "name": "Maelström Hold",
+    "typeLine": "Ruby Ring",
+    "baseType": "Ruby Ring",
+    "rarity": "Rare",
+    "ilvl": 80,
+    "identified": true,
+    "properties": [
+     {
+      "name": "Ring",
+      "values": [],
+      "displayMode": 0,
+      "type": 109
+     }
+    ],
+    "requirements": [
+     {
+      "name": "Level",
+      "values": [
+       [
+        "56",
+        0
+       ]
+      ],
+      "displayMode": 0,
+      "type": 62
+     }
+    ],
+    "implicitMods": [
+     {
+      "description": "+23% to [Resistances|Fire Resistance]",
+      "domain": "implicit",
+      "hash": "stat.implicit.stat_3372524247",
+      "mods": [
+       {
+        "level": 10,
+        "magnitudes": [
+         {
+          "min": "20",
+          "max": "30"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "explicitMods": [
+     {
+      "description": "+249 to [Accuracy|Accuracy] Rating",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_803737631",
+      "mods": [
+       {
+        "name": "Hunter's",
+        "tier": "P2",
+        "level": 58,
+        "magnitudes": [
+         {
+          "min": "237",
+          "max": "346"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "+115 to maximum Life",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_3299347043",
+      "mods": [
+       {
+        "name": "Virile",
+        "tier": "P1",
+        "level": 54,
+        "magnitudes": [
+         {
+          "min": "100",
+          "max": "119"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "+88 to maximum Mana",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_1050105434",
+      "mods": [
+       {
+        "name": "Opalescent",
+        "tier": "P6",
+        "level": 46,
+        "magnitudes": [
+         {
+          "min": "80",
+          "max": "89"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "+28 to [Dexterity|Dexterity]",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_3261801346",
+      "mods": [
+       {
+        "name": "of the Jaguar",
+        "tier": "S2",
+        "level": 66,
+        "magnitudes": [
+         {
+          "min": "28",
+          "max": "30"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "+14% to all [ElementalDamage|Elemental] [Resistances]",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_2901986750",
+      "mods": [
+       {
+        "name": "of Variegation",
+        "tier": "S2",
+        "level": 54,
+        "magnitudes": [
+         {
+          "min": "12",
+          "max": "14"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "+38% to [Resistances|Cold Resistance]",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_4220027924",
+      "mods": [
+       {
+        "name": "of the Ice",
+        "tier": "S2",
+        "level": 71,
+        "magnitudes": [
+         {
+          "min": "36",
+          "max": "40"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "frameType": 2,
+    "frameTypeId": "Rare",
+    "extended": {
+     "hashes": {
+      "explicit": [
+       [
+        "explicit.stat_803737631",
+        [
+         3
+        ]
+       ],
+       [
+        "explicit.stat_3299347043",
+        [
+         4
+        ]
+       ],
+       [
+        "explicit.stat_1050105434",
+        [
+         5
+        ]
+       ],
+       [
+        "explicit.stat_3261801346",
+        [
+         1
+        ]
+       ],
+       [
+        "explicit.stat_2901986750",
+        [
+         2
+        ]
+       ],
+       [
+        "explicit.stat_4220027924",
+        [
+         0
+        ]
+       ]
+      ],
+      "implicit": [
+       [
+        "implicit.stat_3372524247",
+        [
+         0
+        ]
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "a4677593778ff308baf724e08040cc645b76050d5ed7b22cc5198481b284fadb",
+   "listing": {
+    "method": "psapi",
+    "indexed": "2026-09-15T18:29:11Z",
+    "stash": {
+     "name": "Stash",
+     "x": 3,
+     "y": 5
+    },
+    "price": {
+     "type": "~price",
+     "amount": 10,
+     "currency": "exalted"
+    },
+    "account": {
+     "name": "Seller2#0002",
+     "online": {
+      "league": "Forbidden Rites"
+     },
+     "lastCharacterName": "Character2",
+     "language": "en_US",
+     "realm": "poe2"
+    },
+    "whisper": "@Character2 Hi, I would like to buy your Gale Knuckle Lazuli Ring listed for 10 exalted in Forbidden Rites (stash tab \"Stash\"; position: left 4, top 6)",
+    "whisper_token": "scrubbed"
+   },
+   "item": {
+    "realm": "poe2",
+    "verified": true,
+    "w": 1,
+    "h": 1,
+    "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvQmFzZXR5cGVzL0xhenVsaVJpbmciLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MSwicmVhbG0iOiJwb2UyIn1d/53f4255f0b/LazuliRing.png",
+    "league": "Forbidden Rites",
+    "id": "a4677593778ff308baf724e08040cc645b76050d5ed7b22cc5198481b284fadb",
+    "name": "Gale Knuckle",
+    "typeLine": "Lazuli Ring",
+    "baseType": "Lazuli Ring",
+    "rarity": "Rare",
+    "ilvl": 82,
+    "identified": true,
+    "properties": [
+     {
+      "name": "Ring",
+      "values": [],
+      "displayMode": 0,
+      "type": 109
+     }
+    ],
+    "requirements": [
+     {
+      "name": "Level",
+      "values": [
+       [
+        "56",
+        0
+       ]
+      ],
+      "displayMode": 0,
+      "type": 62
+     }
+    ],
+    "implicitMods": [
+     {
+      "description": "+21 to maximum Mana",
+      "domain": "implicit",
+      "hash": "stat.implicit.stat_1050105434",
+      "mods": [
+       {
+        "magnitudes": [
+         {
+          "min": "20",
+          "max": "30"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "explicitMods": [
+     {
+      "description": "+119 to maximum Life",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_3299347043",
+      "mods": [
+       {
+        "name": "Virile",
+        "tier": "P1",
+        "level": 54,
+        "magnitudes": [
+         {
+          "min": "100",
+          "max": "119"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "+40% to [Resistances|Fire Resistance]",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_3372524247",
+      "mods": [
+       {
+        "name": "of Magma",
+        "tier": "S2",
+        "level": 71,
+        "magnitudes": [
+         {
+          "min": "36",
+          "max": "40"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "+39% to [Resistances|Cold Resistance]",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_4220027924",
+      "mods": [
+       {
+        "name": "of the Ice",
+        "tier": "S2",
+        "level": 71,
+        "magnitudes": [
+         {
+          "min": "36",
+          "max": "40"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "21% increased Mana Regeneration Rate",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_789117908",
+      "mods": [
+       {
+        "name": "of the Hearth",
+        "tier": "S1",
+        "level": 30,
+        "magnitudes": [
+         {
+          "min": "18",
+          "max": "22"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "15% increased [LightRadius|Light Radius]",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_1263695895",
+      "mods": [
+       {
+        "name": "of the Hearth",
+        "tier": "S1",
+        "level": 30,
+        "magnitudes": [
+         {
+          "min": "15",
+          "max": "15"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "frameType": 2,
+    "frameTypeId": "Rare",
+    "extended": {
+     "hashes": {
+      "explicit": [
+       [
+        "explicit.stat_3299347043",
+        [
+         3
+        ]
+       ],
+       [
+        "explicit.stat_3372524247",
+        [
+         2
+        ]
+       ],
+       [
+        "explicit.stat_4220027924",
+        [
+         0
+        ]
+       ],
+       [
+        "explicit.stat_789117908",
+        [
+         1
+        ]
+       ],
+       [
+        "explicit.stat_1263695895",
+        [
+         1
+        ]
+       ]
+      ],
+      "implicit": [
+       [
+        "implicit.stat_1050105434",
+        [
+         0
+        ]
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "a66c8c8ace6ec64d25764e7c1950022d154368ce3624cc487bcd40121d5e0a25",
+   "listing": {
+    "method": "psapi",
+    "indexed": "2026-09-11T13:49:06Z",
+    "stash": {
+     "name": "Stash",
+     "x": 2,
+     "y": 18
+    },
+    "price": {
+     "type": "~price",
+     "amount": 30,
+     "currency": "exalted"
+    },
+    "account": {
+     "name": "Seller3#0003",
+     "online": {
+      "league": "Forbidden Rites"
+     },
+     "lastCharacterName": "Character3",
+     "language": "en_US",
+     "realm": "poe2"
+    },
+    "whisper": "@Character3 Hi, I would like to buy your Beast Coil Ruby Ring listed for 30 exalted in Forbidden Rites (stash tab \"Stash\"; position: left 3, top 19)",
+    "whisper_token": "scrubbed"
+   },
+   "item": {
+    "realm": "poe2",
+    "verified": true,
+    "w": 1,
+    "h": 1,
+    "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvQmFzZXR5cGVzL1J1YnlSaW5nIiwidyI6MSwiaCI6MSwic2NhbGUiOjEsInJlYWxtIjoicG9lMiJ9XQ/4f0e6f99c1/RubyRing.png",
+    "league": "Forbidden Rites",
+    "id": "a66c8c8ace6ec64d25764e7c1950022d154368ce3624cc487bcd40121d5e0a25",
+    "name": "Beast Coil",
+    "typeLine": "Ruby Ring",
+    "baseType": "Ruby Ring",
+    "rarity": "Rare",
+    "ilvl": 81,
+    "identified": true,
+    "properties": [
+     {
+      "name": "Ring",
+      "values": [],
+      "displayMode": 0,
+      "type": 109
+     }
+    ],
+    "requirements": [
+     {
+      "name": "Level",
+      "values": [
+       [
+        "52",
+        0
+       ]
+      ],
+      "displayMode": 0,
+      "type": 62
+     }
+    ],
+    "implicitMods": [
+     {
+      "description": "+24% to [Resistances|Fire Resistance]",
+      "domain": "implicit",
+      "hash": "stat.implicit.stat_3372524247",
+      "mods": [
+       {
+        "level": 10,
+        "magnitudes": [
+         {
+          "min": "20",
+          "max": "30"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "explicitMods": [
+     {
+      "description": "+177 to [Evasion] Rating",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_2144192055",
+      "mods": [
+       {
+        "name": "Elusory",
+        "tier": "P2",
+        "level": 65,
+        "magnitudes": [
+         {
+          "min": "175",
+          "max": "202"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "+87 to maximum Life",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_3299347043",
+      "mods": [
+       {
+        "name": "Rotund",
+        "tier": "P2",
+        "level": 46,
+        "magnitudes": [
+         {
+          "min": "85",
+          "max": "99"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "+57 to maximum Mana",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_1050105434",
+      "mods": [
+       {
+        "name": "Cerulean",
+        "tier": "P8",
+        "level": 33,
+        "magnitudes": [
+         {
+          "min": "55",
+          "max": "64"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "+14% to all [ElementalDamage|Elemental] [Resistances]",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_2901986750",
+      "mods": [
+       {
+        "name": "of Variegation",
+        "tier": "S2",
+        "level": 54,
+        "magnitudes": [
+         {
+          "min": "12",
+          "max": "14"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "+33% to [Resistances|Cold Resistance]",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_4220027924",
+      "mods": [
+       {
+        "name": "of the Polar Bear",
+        "tier": "S3",
+        "level": 60,
+        "magnitudes": [
+         {
+          "min": "31",
+          "max": "35"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "frameType": 2,
+    "frameTypeId": "Rare",
+    "extended": {
+     "hashes": {
+      "explicit": [
+       [
+        "explicit.stat_2144192055",
+        [
+         1
+        ]
+       ],
+       [
+        "explicit.stat_3299347043",
+        [
+         4
+        ]
+       ],
+       [
+        "explicit.stat_1050105434",
+        [
+         3
+        ]
+       ],
+       [
+        "explicit.stat_2901986750",
+        [
+         2
+        ]
+       ],
+       [
+        "explicit.stat_4220027924",
+        [
+         0
+        ]
+       ]
+      ],
+      "implicit": [
+       [
+        "implicit.stat_3372524247",
+        [
+         0
+        ]
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "7ff2418b333ec68b6e530556a7e90b57891b99298b1d158c9f4dea1cdd42588e",
+   "listing": {
+    "method": "psapi",
+    "indexed": "2026-09-22T19:27:23Z",
+    "stash": {
+     "name": "Stash",
+     "x": 5,
+     "y": 16
+    },
+    "price": {
+     "type": "~price",
+     "amount": 40,
+     "currency": "exalted"
+    },
+    "account": {
+     "name": "Seller4#0004",
+     "online": {
+      "league": "Forbidden Rites"
+     },
+     "lastCharacterName": "Character4",
+     "language": "en_US",
+     "realm": "poe2"
+    },
+    "whisper": "@Character4 Hi, I would like to buy your Wrath Loop Sapphire Ring listed for 40 exalted in Forbidden Rites (stash tab \"Stash\"; position: left 6, top 17)",
+    "whisper_token": "scrubbed"
+   },
+   "item": {
+    "realm": "poe2",
+    "verified": true,
+    "w": 1,
+    "h": 1,
+    "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvQmFzZXR5cGVzL1NhcHBoaXJlUmluZyIsInciOjEsImgiOjEsInNjYWxlIjoxLCJyZWFsbSI6InBvZTIifV0/14608c24b1/SapphireRing.png",
+    "league": "Forbidden Rites",
+    "id": "7ff2418b333ec68b6e530556a7e90b57891b99298b1d158c9f4dea1cdd42588e",
+    "name": "Wrath Loop",
+    "typeLine": "Sapphire Ring",
+    "baseType": "Sapphire Ring",
+    "rarity": "Rare",
+    "ilvl": 82,
+    "identified": true,
+    "properties": [
+     {
+      "name": "Ring",
+      "values": [],
+      "displayMode": 0,
+      "type": 109
+     }
+    ],
+    "requirements": [
+     {
+      "name": "Level",
+      "values": [
+       [
+        "56",
+        0
+       ]
+      ],
+      "displayMode": 0,
+      "type": 62
+     }
+    ],
+    "implicitMods": [
+     {
+      "description": "+20% to [Resistances|Cold Resistance]",
+      "domain": "implicit",
+      "hash": "stat.implicit.stat_4220027924",
+      "mods": [
+       {
+        "level": 15,
+        "magnitudes": [
+         {
+          "min": "20",
+          "max": "30"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "explicitMods": [
+     {
+      "description": "+103 to maximum Life",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_3299347043",
+      "mods": [
+       {
+        "name": "Virile",
+        "tier": "P1",
+        "level": 54,
+        "magnitudes": [
+         {
+          "min": "100",
+          "max": "119"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "+28 to [Intelligence|Intelligence]",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_328541901",
+      "mods": [
+       {
+        "name": "of the Savant",
+        "tier": "S2",
+        "level": 66,
+        "magnitudes": [
+         {
+          "min": "28",
+          "max": "30"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "+16% to all [ElementalDamage|Elemental] [Resistances]",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_2901986750",
+      "mods": [
+       {
+        "name": "of the Rainbow",
+        "tier": "S1",
+        "level": 68,
+        "magnitudes": [
+         {
+          "min": "15",
+          "max": "16"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "+37% to [Resistances|Fire Resistance]",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_3372524247",
+      "mods": [
+       {
+        "name": "of Magma",
+        "tier": "S2",
+        "level": 71,
+        "magnitudes": [
+         {
+          "min": "36",
+          "max": "40"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "frameType": 2,
+    "frameTypeId": "Rare",
+    "extended": {
+     "hashes": {
+      "explicit": [
+       [
+        "explicit.stat_3299347043",
+        [
+         3
+        ]
+       ],
+       [
+        "explicit.stat_328541901",
+        [
+         0
+        ]
+       ],
+       [
+        "explicit.stat_2901986750",
+        [
+         1
+        ]
+       ],
+       [
+        "explicit.stat_3372524247",
+        [
+         2
+        ]
+       ]
+      ],
+      "implicit": [
+       [
+        "implicit.stat_4220027924",
+        [
+         0
+        ]
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "9422e5eb56011729ef87296e06fd64e292cb983eeebad5a1ee983f9c0d4a8dcc",
+   "listing": {
+    "method": "psapi",
+    "indexed": "2026-09-18T19:12:03Z",
+    "stash": {
+     "name": "Stash",
+     "x": 1,
+     "y": 11
+    },
+    "price": {
+     "type": "~price",
+     "amount": 50,
+     "currency": "exalted"
+    },
+    "account": {
+     "name": "Seller5#0005",
+     "online": {
+      "league": "Forbidden Rites"
+     },
+     "lastCharacterName": "Character5",
+     "language": "en_US",
+     "realm": "poe2"
+    },
+    "whisper": "@Character5 Hi, I would like to buy your Foe Grip Sapphire Ring listed for 50 exalted in Forbidden Rites (stash tab \"Stash\"; position: left 2, top 12)",
+    "whisper_token": "scrubbed"
+   },
+   "item": {
+    "realm": "poe2",
+    "verified": true,
+    "w": 1,
+    "h": 1,
+    "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvQmFzZXR5cGVzL1NhcHBoaXJlUmluZyIsInciOjEsImgiOjEsInNjYWxlIjoxLCJyZWFsbSI6InBvZTIifV0/14608c24b1/SapphireRing.png",
+    "league": "Forbidden Rites",
+    "id": "9422e5eb56011729ef87296e06fd64e292cb983eeebad5a1ee983f9c0d4a8dcc",
+    "name": "Foe Grip",
+    "typeLine": "Sapphire Ring",
+    "baseType": "Sapphire Ring",
+    "rarity": "Rare",
+    "ilvl": 81,
+    "identified": true,
+    "properties": [
+     {
+      "name": "Ring",
+      "values": [],
+      "displayMode": 0,
+      "type": 109
+     }
+    ],
+    "requirements": [
+     {
+      "name": "Level",
+      "values": [
+       [
+        "56",
+        0
+       ]
+      ],
+      "displayMode": 0,
+      "type": 62
+     }
+    ],
+    "implicitMods": [
+     {
+      "description": "+22% to [Resistances|Cold Resistance]",
+      "domain": "implicit",
+      "hash": "stat.implicit.stat_4220027924",
+      "mods": [
+       {
+        "level": 15,
+        "magnitudes": [
+         {
+          "min": "20",
+          "max": "30"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "explicitMods": [
+     {
+      "description": "+84 to maximum Life",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_3299347043",
+      "mods": [
+       {
+        "name": "Robust",
+        "tier": "P3",
+        "level": 38,
+        "magnitudes": [
+         {
+          "min": "70",
+          "max": "84"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "+18 to [Intelligence|Intelligence]",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_328541901",
+      "mods": [
+       {
+        "name": "of the Augur",
+        "tier": "S5",
+        "level": 33,
+        "magnitudes": [
+         {
+          "min": "17",
+          "max": "20"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "+36% to [Resistances|Fire Resistance]",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_3372524247",
+      "mods": [
+       {
+        "name": "of Magma",
+        "tier": "S2",
+        "level": 71,
+        "magnitudes": [
+         {
+          "min": "36",
+          "max": "40"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "+24% to [Resistances|Cold Resistance]",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_4220027924",
+      "mods": [
+       {
+        "name": "of the Yeti",
+        "tier": "S5",
+        "level": 38,
+        "magnitudes": [
+         {
+          "min": "21",
+          "max": "25"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "frameType": 2,
+    "frameTypeId": "Rare",
+    "extended": {
+     "hashes": {
+      "explicit": [
+       [
+        "explicit.stat_3299347043",
+        [
+         3
+        ]
+       ],
+       [
+        "explicit.stat_328541901",
+        [
+         2
+        ]
+       ],
+       [
+        "explicit.stat_3372524247",
+        [
+         1
+        ]
+       ],
+       [
+        "explicit.stat_4220027924",
+        [
+         0
+        ]
+       ]
+      ],
+      "implicit": [
+       [
+        "implicit.stat_4220027924",
+        [
+         0
+        ]
+       ]
+      ]
+     }
+    }
+   }
+  }
+ ]
+}

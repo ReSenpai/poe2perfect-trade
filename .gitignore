@@ -1,0 +1,12 @@
+node_modules/
+.output/
+.wxt/
+.web-ext/
+coverage/
+*.log
+.env*
+CLAUDE.local.md
+
+# Store graphics: rebuild with scripts/make-store-assets.py
+store/*.png
+store/raw/

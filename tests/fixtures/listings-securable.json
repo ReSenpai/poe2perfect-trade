@@ -1,0 +1,2317 @@
+{
+ "meta": {
+  "league": "Forbidden Rites",
+  "capturedAt": "2026-09-18T04:21:18.099Z"
+ },
+ "request": {
+  "query": {
+   "status": "securable",
+   "stats": [
+    {
+     "type": "and",
+     "filters": [
+      {
+       "id": "explicit.stat_3299347043",
+       "value": {
+        "min": 70
+       }
+      }
+     ]
+    }
+   ],
+   "filters": {
+    "type_filters": {
+     "filters": {
+      "category": {
+       "option": "armour.gloves"
+      },
+      "rarity": {
+       "option": "rare"
+      }
+     }
+    }
+   }
+  },
+  "sort": {
+   "price": "asc"
+  }
+ },
+ "search": {
+  "id": "H4sIAAAAAAAAA1WO0QqDMAxF_yXPIjIF0V8ZIl3NJFCtpKlMpP--dL64PN2ce2_ICUGMxAA9BLSRzcshFD-o7HmCHBuqadZJ8ZucIF8GTYrxszmyJGUujPWj6-qmrZpas7txUZsnLLRC31YpDWm4nbhOj7f9Jq0RnD0fWftNyK_5B1585HJ2fscAqQA2TPKfUYSQ8nwBdCgMX9oAAAA",
+  "complexity": 9,
+  "total": 10000,
+  "result": [
+   "9157f892a7ce16db06ec1ec5e3cb7ff266c43bed31ef0760790ab28e8abecdbb",
+   "da320304af85fc6e54a59b775cd1f0a1c84a02f3d1efcd687619e9e1b1a7cd43",
+   "7661ea85a8d7af650ad88479ff76414f81c24e36c478ef5fc7e7f31ea257e0b0",
+   "e5f412a20b95cc2a76531bb3f571b181175c3c16364d99a52f504d78552dcb13",
+   "140056725c57686524122af456e5a34519e6231d513db1ce9c28b43aa2e2b090",
+   "e8d68eca2f1d689f97f05c344a22acaa1c02ae001ecbcee711e98ee3751ccf9a",
+   "cd2c3cddf378313c71877c20651e32383e900fd79e4a8ed1f0ee7d77f76d6ae3",
+   "0894946b3c4dc33b366159a646879f196bd66baa7f3936b19b930e98a3527f3d",
+   "5267681f2ec06523a1182624fb7a8a3302b957636a98750fb682134e35bb7544",
+   "036c3baf9dec7fcbad5adb96853b3b7e1b82ed1d46c76a641cc1e1901cb8d36d",
+   "5e3972a3169773b368450e238ae90068b23e37c79705e52be943b40ee9caa367",
+   "e572f47f50efa197cd23db42397334953a485915d7b31c98b2e03aa94a3e40e8",
+   "0d57b187e352a031b9d6fb3297c2eebaa36b23de9ef1e7fe7c5cc76d9dd3b3e2",
+   "f4550ab8fcb7dedb6299e69842d53ebf709d34a5e9d7de1ddbd4fc6e9bbadda3",
+   "d4f2c4d8c3942511de13b7f5fc0cce5114c28107281bce2f569103774d40cce3",
+   "0ad9c2c2d0e91edfb47b829dab18c0836a12042d794ea58b486b7a46850c3b3d",
+   "3e92105970f1451504e8ce320fb48b9e044403efe7c41e12049f981a5500509d",
+   "e088e038cb4b9c103fa623e62b05bc0a5111f230a55dfffbf1303035a486b3b4",
+   "62b5af5932dfa1e1c7299493c140d609b5b3c94160751efec66b409adb456990",
+   "0be9004f42a54e88661385767fba72030d8fe49e8e30a3fb4598ae4658128e74",
+   "c3055a729382b7efe1c8432c5d14813d47f6a945cd44e4e6c28de10cc148dbb8",
+   "b6ca3b8ccf0c3e0fa94bae05985dbe47daf81a8c06e8b27eb8caddab1bd9b2aa",
+   "9c378dc4ae3c99c7a79ca473cd6f7eda013a0bd1281ae2a84882338eff2f96bb",
+   "334ea083ec439179a8157f97e7d4e2a38e917d30b9e1367afeaf8766d5af4df7",
+   "9655176c2f56b7b2f6fb1d8541d58dcd0ece75585af400042707f1921f609abd",
+   "83f894076e11f20ec5fb1bd63efa6e2a656df38b0836371838bc08deb268d3bc",
+   "21c8f5776bb56770069bf240de635564085c15c7bdf7b10826c3c443974b2ae0",
+   "02237a1c7d674b333d2d5a628b101c764a857fece60aaa663d467b8becd2cff0",
+   "3793c76ecbe825fad587a69d98667f362121ad202625a079b1c701b623329eda",
+   "fc415ded9c1b92856ec0e6ad2fe627e1e4edcdf2a3d4f8be407d879f155e0cc2",
+   "dab0caa21db1de69cbaf6ed72ad3e28fc4dc157e1987f6d9a6aeaa05f3924cc1",
+   "e8b8851d88354521c2ede3871fd10c25ef68ab3f4f32b01dcd345633e660b921",
+   "f0ee92ffd07113f7a7bdb8ae3b7da27bb841ed6e0d06c3cc0276a5358aadcf26",
+   "a864903ae2a0e45b73cbf29e481272e7cf10b08884027bfad4966c734382b5d0",
+   "3d76b13a0b0ac67c96da11ec06fe7410adc9f78dddb9edd5cf2adf6d72179001",
+   "2d135a53963417725bdaf3558d3bc4ad2974851d81351c00b7ee33318fb96018",
+   "3d35b83bf5c2e910d2d3267384d6cac1d15fe0b245ab62cd941a8e9ca9986259",
+   "5b1553ae1f9b00ca4508a4ab94edb36197fa370bfe5a3905bbed2243a96952f6",
+   "f3b5c528a6a821ae207040ccf1f4a9597bebe6e86f27f23429c28ca18f42989c",
+   "12de0dd5ca3e1cc6c1ae8cab2b2fe13d745e079dc30c124096dcd084ed474e96",
+   "dacc2f4970b586c8ae8b5e4da1545a25bfbeb0497c2a737bcfac7685cc019493",
+   "8fc3dedfd2b123e5bebec9fdf7874fa77c6f0be6d1c1fe198a8b53ffdecfa75c",
+   "8a20069108b11dbdba804ee21983bd6af957c9ee52ae8f0d77140e6ed9e1e89d",
+   "1ae59f15de695af84a043b7edccf62f674878f5f651e5a0b753c72cecbb0d102",
+   "942f867d1e531c3a45dee3dd188156dd0794a5503efcd1aa543a95ff40026f30",
+   "73051defb1f21b9e5573823e75cafe593f6dfbf0e10a2d7d23372a991515aecc",
+   "f4bcd047353ac03b687adda8bca66677fd952c5fb7ad89d82b9013e81f7852cf",
+   "c3df5762c95ec4e89085b3f206fe8398ae0827917b508c51cefcac2c76c1be8e",
+   "cfc1c82925f39b7c5ef46390eea46788add5b8f04dcf426e1b59cbddcd2b9b00",
+   "edfc7693f51fe0dd577897e70c3589e64094e08fa5f6b586e1b0bd6b57d08bf9",
+   "268d87fe1b2ee2aa8a7c41da57b6fc4c1b15f56e1ff05b4dd6412a67b38645d5",
+   "9ae1d2e019e4df245d17480ef7ef5c06dacbd1f9a9771203b43d15aa993aa7ef",
+   "a4eeffd93dce0f8757e22c7bc15171fd81bb9d488aca52cf16e262a5ea1a7bee",
+   "29d7aa7b5e611a21f3374c429766a3c0f72f73811c7384cceba105fa26eb4693",
+   "ed51f1eaac88a748fc09482ce99ce45ae5ac9e46e63734df501bf3399fccf7f2",
+   "213510400ffdc161b733fbfe8d9a4217a8468ec2da69b31d75827372ed53b8b7",
+   "57bbe187225d71cae70d67d4a30f967d40a5ca030ca590d32247e1679c62ff97",
+   "8d53a9e992f572408060e52b10da2af833dcef0c6ccaa098b2584b363fe4d8a0",
+   "7215de24a3c9e80fc7ecf30cb4053b206ad8dd0bc07ea1eec3166d917d5fb6fb",
+   "7055d9f50097dd302bdc2522e0c65c3521bf37cccd35ebca73cbc1ad2857868e",
+   "1be53489cf992ec3d99b46b6a9b7a9c4903b3debdf291f2e8c791c799a9a1f81",
+   "d0851b3ac95a8f6cb2a2bcd3a4c2c2cdc513e76745695ffdd3f9f130e694d341",
+   "de06553c004653677a90cf28b7aa6c182fc326fe4b0a494bdd8e7cca3eb4aa09",
+   "d74f451e7122eb6c2a6ba34920abd251b3e8a07ed5e8fd0d92e9b26521dd359a",
+   "c83f97e2a625011745d52531a02d5d1dfc75cf2e10da8b7e3a044c825cdd0b59",
+   "a2d5e3e17ea1a0b4cb506b5fc6f6036e097ceb4c7cf4893dd4b11dbeac84c13d",
+   "bad660cd58757231ee349b2672185034a0686df853a62e0ce71d59cb44b4d70e",
+   "395f3d4f72404f21fb50371e705d39f55f44770a27ca3decadd2f1ad918a0b44",
+   "094c73ab3ddce9014e217c17910fbd48e9314ab7b4bfa3ba564dd61988a41588",
+   "474a9022fa63946342bbf43d5d0490d359b55b82bdde896cb733b6e09ed3b826",
+   "46a188279609eeb2b609fc165334cbdd940c34d76b927e3d7f7d68f6eeae0285",
+   "34f1fb06a2180b71ca44e29a330023f7d39203abcb7545f633855fee57ecf95c",
+   "973a3cc9f12f7ae517199117f2332d3fdf9e3249f8a90cbdae0425723a8fef2c",
+   "be2903448f720951c95259a71720e8a7a1877b68a2cab931410d5765c4253072",
+   "47d77574c2829df4fb571e5a9f82b6b6ed86a45fd85137f85fd5c631f65999e8",
+   "4533137939afd52b81a003520b8b4c1b6a21b30ff584503281328393aba8c3b6",
+   "0d7b28027e2e7ead693ed7fa9d16a4af8fe513a370297fc52411ac3155bed1f4",
+   "418858c43348a5691ee1deed4c2bc4c903f75a2ad69dc1a828885c2dd1f59c30",
+   "b7fe253a473480e4986cbad7048f114970968b46ce54c85adfe0ffa78eb32f95",
+   "7a99baf08be34b594f8c8cf92c82298af130529c8ee858680e21438d0f197ee9",
+   "8d290c73b4c2c3a8804a239e209a50ec0b69b41866426cd30d297aa19a39d05f",
+   "2b9d109d85aff7e3fe941571271c0c2e3d70ebe57f9d4c8582f95cc8b5b33cb5",
+   "56b2f4468bb76a221db32bb3a8f013bd2441aa96c014f497802d88370a0fdc66",
+   "4f8e86c7312fa9777051538fb8e75136e5588cdcbcd019ce752b2da074b50824",
+   "033b9899e64df51c6cf17a999011eae901b61bfe07031d4b8bf26769515cb2d9",
+   "38f09cafa2c5c2526029093cdd611c31ee48d180189ffd5751d4a02a5fc3d24c",
+   "5ace5027a368fa71594bd8059b344705b23c045878598001eaecf1cfeab8e611",
+   "6c8343f940004e9396979850a22e02a968a98cd43d65c02e9764e5efcee08001",
+   "198699e69a9157ae8307832c8d78dba8b59b706bc72fdd255602e248f1c65e58",
+   "b7372721016a6321ed746630f759f45f1fe9046518fdc4dcb2c67c0e650d2dd0",
+   "630268748e816d1f637b09f4a38f04001bc15e6827eba425ff1ae8ff4e6ad16d",
+   "34432325972075abf00c47256d448c87e144259ccd5c865705655a84460ce63e",
+   "2977f57f4ebe57cc3828f28b44cfb642c91256aa4c31659f407ee115e7585466",
+   "9aaf60c7ea1f8fd8196acd7c919e55722208961663ae7faf04147ea35d1d50a9",
+   "f4c999b8656699e247a95e49f96ad12688d8091c94224bf9bdda2be0d7de5e15",
+   "e6e8974da57f831705c2ed64418044e3cadf58032e42cc98ecab4e1b750e5655",
+   "4a5977487f68c679669ae74c64b6f14e1328603c3e5b821dcc7fb4f8de36499c",
+   "dc3a831f20775e799314e6ebf9a5fad50f793d4cabbd56b83913a0790900fc2e",
+   "9b438570748bb6bff09e53ab36c2d7bf3bda92fde217fe335ea83444618fd274",
+   "5247e8c8a4db07c116b14b7a6f54a1a9e673fb52cffabc11892345c573c38f74"
+  ]
+ },
+ "listings": [
+  {
+   "id": "9157f892a7ce16db06ec1ec5e3cb7ff266c43bed31ef0760790ab28e8abecdbb",
+   "listing": {
+    "method": "psapi",
+    "indexed": "2026-09-18T01:08:48Z",
+    "stash": {
+     "name": "Stash",
+     "x": 0,
+     "y": 4
+    },
+    "price": {
+     "type": "~b/o",
+     "amount": 1,
+     "currency": "aug"
+    },
+    "fee": 12248,
+    "account": {
+     "name": "Seller1#0001",
+     "online": null
+    },
+    "hideout_token": "scrubbed"
+   },
+   "item": {
+    "realm": "poe2",
+    "verified": true,
+    "w": 2,
+    "h": 2,
+    "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvQmFzZXR5cGVzL0dsb3Zlc0RleDA1IiwidyI6MiwiaCI6Miwic2NhbGUiOjEsInJlYWxtIjoicG9lMiJ9XQ/b6a93d2794/GlovesDex05.png",
+    "league": "Forbidden Rites",
+    "id": "9157f892a7ce16db06ec1ec5e3cb7ff266c43bed31ef0760790ab28e8abecdbb",
+    "name": "Demon Grasp",
+    "typeLine": "Spiked Bracers",
+    "baseType": "Spiked Bracers",
+    "rarity": "Rare",
+    "ilvl": 69,
+    "identified": true,
+    "note": "~b/o 1 aug",
+    "properties": [
+     {
+      "name": "Gloves",
+      "values": [],
+      "displayMode": 0,
+      "type": 109
+     },
+     {
+      "name": "[Evasion|Evasion Rating]",
+      "values": [
+       [
+        "135",
+        0
+       ]
+      ],
+      "displayMode": 0,
+      "type": 17
+     }
+    ],
+    "requirements": [
+     {
+      "name": "Level",
+      "values": [
+       [
+        "59",
+        0
+       ]
+      ],
+      "displayMode": 0,
+      "type": 62
+     },
+     {
+      "name": "[Dexterity|Dex]",
+      "values": [
+       [
+        "73",
+        0
+       ]
+      ],
+      "displayMode": 1,
+      "type": 64
+     }
+    ],
+    "explicitMods": [
+     {
+      "description": "+123 to maximum Life",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_3299347043",
+      "mods": [
+       {
+        "name": "Athlete's",
+        "tier": "P1",
+        "level": 60,
+        "magnitudes": [
+         {
+          "min": "120",
+          "max": "149"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "+46 to maximum Mana",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_1050105434",
+      "mods": [
+       {
+        "name": "Teal",
+        "tier": "P6",
+        "level": 25,
+        "magnitudes": [
+         {
+          "min": "35",
+          "max": "54"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "+28% to [Resistances|Cold Resistance]",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_4220027924",
+      "mods": [
+       {
+        "name": "of the Walrus",
+        "tier": "S4",
+        "level": 50,
+        "magnitudes": [
+         {
+          "min": "26",
+          "max": "30"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "[LifeLeech|Leech] 8.89% of [Physical] [Attack] Damage as Life",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_2557965901",
+      "mods": [
+       {
+        "name": "of the Lamprey",
+        "tier": "S2",
+        "level": 54,
+        "magnitudes": [
+         {
+          "min": "8",
+          "max": "8.9"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "frameType": 2,
+    "frameTypeId": "Rare",
+    "extended": {
+     "ev": 162,
+     "ev_aug": true,
+     "hashes": {
+      "explicit": [
+       [
+        "explicit.stat_3299347043",
+        [
+         3
+        ]
+       ],
+       [
+        "explicit.stat_1050105434",
+        [
+         1
+        ]
+       ],
+       [
+        "explicit.stat_4220027924",
+        [
+         0
+        ]
+       ],
+       [
+        "explicit.stat_2557965901",
+        [
+         2
+        ]
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "da320304af85fc6e54a59b775cd1f0a1c84a02f3d1efcd687619e9e1b1a7cd43",
+   "listing": {
+    "method": "psapi",
+    "indexed": "2026-09-17T19:44:32Z",
+    "stash": {
+     "name": "Stash",
+     "x": 10,
+     "y": 5
+    },
+    "price": {
+     "type": "~b/o",
+     "amount": 1,
+     "currency": "aug"
+    },
+    "fee": 21831,
+    "account": {
+     "name": "Seller2#0002",
+     "online": null
+    },
+    "hideout_token": "scrubbed"
+   },
+   "item": {
+    "realm": "poe2",
+    "verified": true,
+    "w": 2,
+    "h": 2,
+    "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvQmFzZXR5cGVzL0dsb3Zlc0ludFN0cjAzIiwidyI6MiwiaCI6Miwic2NhbGUiOjEsInJlYWxtIjoicG9lMiJ9XQ/0e34625351/GlovesIntStr03.png",
+    "league": "Forbidden Rites",
+    "id": "da320304af85fc6e54a59b775cd1f0a1c84a02f3d1efcd687619e9e1b1a7cd43",
+    "name": "Gloom Paw",
+    "typeLine": "Gleaming Cuffs",
+    "baseType": "Gleaming Cuffs",
+    "rarity": "Rare",
+    "ilvl": 81,
+    "identified": true,
+    "note": "~b/o 1 aug",
+    "properties": [
+     {
+      "name": "Gloves",
+      "values": [],
+      "displayMode": 0,
+      "type": 109
+     },
+     {
+      "name": "[Armour]",
+      "values": [
+       [
+        "115",
+        1
+       ]
+      ],
+      "displayMode": 0,
+      "type": 16
+     },
+     {
+      "name": "[EnergyShield|Energy Shield]",
+      "values": [
+       [
+        "32",
+        1
+       ]
+      ],
+      "displayMode": 0,
+      "type": 18
+     }
+    ],
+    "requirements": [
+     {
+      "name": "Level",
+      "values": [
+       [
+        "75",
+        0
+       ]
+      ],
+      "displayMode": 0,
+      "type": 62
+     },
+     {
+      "name": "[Strength|Str]",
+      "values": [
+       [
+        "52",
+        0
+       ]
+      ],
+      "displayMode": 1,
+      "type": 63
+     },
+     {
+      "name": "[Intelligence|Int]",
+      "values": [
+       [
+        "52",
+        0
+       ]
+      ],
+      "displayMode": 1,
+      "type": 65
+     }
+    ],
+    "explicitMods": [
+     {
+      "description": "22% increased [Armour|Armour] and [EnergyShield|Energy Shield]",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_3321629045",
+      "mods": [
+       {
+        "name": "Druid's",
+        "tier": "P4",
+        "level": 33,
+        "magnitudes": [
+         {
+          "min": "21",
+          "max": "26"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "+167 to maximum Life",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_3299347043",
+      "mods": [
+       {
+        "name": "Athlete's",
+        "tier": "P1",
+        "level": 60,
+        "magnitudes": [
+         {
+          "min": "120",
+          "max": "149"
+         }
+        ]
+       },
+       {
+        "name": "Druid's",
+        "tier": "P4",
+        "level": 33,
+        "magnitudes": [
+         {
+          "min": "20",
+          "max": "25"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "Gain 4 Life per Enemy Hit with [Attack|Attacks]",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_2797971005",
+      "mods": [
+       {
+        "name": "of Regrowth",
+        "tier": "S2",
+        "level": 30,
+        "magnitudes": [
+         {
+          "min": "4",
+          "max": "4"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "Gain 65 Life per enemy killed",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_3695891184",
+      "mods": [
+       {
+        "name": "of Glory",
+        "tier": "S2",
+        "level": 66,
+        "magnitudes": [
+         {
+          "min": "54",
+          "max": "68"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "Gain 18 Mana per enemy killed",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_1368271171",
+      "mods": [
+       {
+        "name": "of Consumption",
+        "tier": "S4",
+        "level": 45,
+        "magnitudes": [
+         {
+          "min": "15",
+          "max": "20"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "frameType": 2,
+    "frameTypeId": "Rare",
+    "extended": {
+     "ar": 138,
+     "ar_aug": true,
+     "es": 38,
+     "es_aug": true,
+     "hashes": {
+      "explicit": [
+       [
+        "explicit.stat_3321629045",
+        [
+         4
+        ]
+       ],
+       [
+        "explicit.stat_3299347043",
+        [
+         0,
+         4
+        ]
+       ],
+       [
+        "explicit.stat_2797971005",
+        [
+         3
+        ]
+       ],
+       [
+        "explicit.stat_3695891184",
+        [
+         1
+        ]
+       ],
+       [
+        "explicit.stat_1368271171",
+        [
+         2
+        ]
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "7661ea85a8d7af650ad88479ff76414f81c24e36c478ef5fc7e7f31ea257e0b0",
+   "listing": {
+    "method": "psapi",
+    "indexed": "2026-09-16T07:45:56Z",
+    "stash": {
+     "name": "Stash",
+     "x": 4,
+     "y": 9
+    },
+    "price": {
+     "type": "~b/o",
+     "amount": 1,
+     "currency": "transmute"
+    },
+    "fee": 7222,
+    "account": {
+     "name": "Seller2#0002",
+     "online": null
+    },
+    "hideout_token": "scrubbed"
+   },
+   "item": {
+    "realm": "poe2",
+    "verified": true,
+    "w": 2,
+    "h": 2,
+    "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvQmFzZXR5cGVzL0dsb3Zlc0ludDA1IiwidyI6MiwiaCI6Miwic2NhbGUiOjEsInJlYWxtIjoicG9lMiJ9XQ/b273510d40/GlovesInt05.png",
+    "league": "Forbidden Rites",
+    "id": "7661ea85a8d7af650ad88479ff76414f81c24e36c478ef5fc7e7f31ea257e0b0",
+    "name": "Vengeance Caress",
+    "typeLine": "Gold Gloves",
+    "baseType": "Gold Gloves",
+    "rarity": "Rare",
+    "ilvl": 63,
+    "identified": true,
+    "note": "~b/o 1 transmute",
+    "properties": [
+     {
+      "name": "Gloves",
+      "values": [],
+      "displayMode": 0,
+      "type": 109
+     },
+     {
+      "name": "[EnergyShield|Energy Shield]",
+      "values": [
+       [
+        "50",
+        1
+       ]
+      ],
+      "displayMode": 0,
+      "type": 18
+     }
+    ],
+    "requirements": [
+     {
+      "name": "Level",
+      "values": [
+       [
+        "59",
+        0
+       ]
+      ],
+      "displayMode": 0,
+      "type": 62
+     },
+     {
+      "name": "[Intelligence|Int]",
+      "values": [
+       [
+        "73",
+        0
+       ]
+      ],
+      "displayMode": 1,
+      "type": 65
+     }
+    ],
+    "explicitMods": [
+     {
+      "description": "20% increased [EnergyShield|Energy Shield]",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_4015621042",
+      "mods": [
+       {
+        "name": "Prior's",
+        "tier": "P5",
+        "level": 16,
+        "magnitudes": [
+         {
+          "min": "14",
+          "max": "20"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "+109 to maximum Life",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_3299347043",
+      "mods": [
+       {
+        "name": "Prior's",
+        "tier": "P5",
+        "level": 16,
+        "magnitudes": [
+         {
+          "min": "11",
+          "max": "19"
+         }
+        ]
+       },
+       {
+        "name": "Rotund",
+        "tier": "P3",
+        "level": 46,
+        "magnitudes": [
+         {
+          "min": "85",
+          "max": "99"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "+5 to [Intelligence|Intelligence]",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_328541901",
+      "mods": [
+       {
+        "name": "of the Pupil",
+        "tier": "S8",
+        "magnitudes": [
+         {
+          "min": "5",
+          "max": "8"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "Gain 19 Life per enemy killed",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_3695891184",
+      "mods": [
+       {
+        "name": "of Conquest",
+        "tier": "S5",
+        "level": 33,
+        "magnitudes": [
+         {
+          "min": "19",
+          "max": "28"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "frameType": 2,
+    "frameTypeId": "Rare",
+    "extended": {
+     "es": 60,
+     "es_aug": true,
+     "hashes": {
+      "explicit": [
+       [
+        "explicit.stat_4015621042",
+        [
+         1
+        ]
+       ],
+       [
+        "explicit.stat_3299347043",
+        [
+         1,
+         3
+        ]
+       ],
+       [
+        "explicit.stat_328541901",
+        [
+         0
+        ]
+       ],
+       [
+        "explicit.stat_3695891184",
+        [
+         2
+        ]
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "e5f412a20b95cc2a76531bb3f571b181175c3c16364d99a52f504d78552dcb13",
+   "listing": {
+    "method": "psapi",
+    "indexed": "2026-09-16T07:44:33Z",
+    "stash": {
+     "name": "Stash",
+     "x": 0,
+     "y": 7
+    },
+    "price": {
+     "type": "~b/o",
+     "amount": 1,
+     "currency": "regal"
+    },
+    "fee": 6589,
+    "account": {
+     "name": "Seller3#0003",
+     "online": null
+    },
+    "hideout_token": "scrubbed"
+   },
+   "item": {
+    "realm": "poe2",
+    "verified": true,
+    "w": 2,
+    "h": 2,
+    "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvQmFzZXR5cGVzL0dsb3Zlc0ludDA0IiwidyI6MiwiaCI6Miwic2NhbGUiOjEsInJlYWxtIjoicG9lMiJ9XQ/8882887a8e/GlovesInt04.png",
+    "league": "Forbidden Rites",
+    "id": "e5f412a20b95cc2a76531bb3f571b181175c3c16364d99a52f504d78552dcb13",
+    "name": "Horror Fingers",
+    "typeLine": "Baroque Gloves",
+    "baseType": "Baroque Gloves",
+    "rarity": "Rare",
+    "ilvl": 58,
+    "identified": true,
+    "note": "~b/o 1 regal",
+    "properties": [
+     {
+      "name": "Gloves",
+      "values": [],
+      "displayMode": 0,
+      "type": 109
+     },
+     {
+      "name": "[EnergyShield|Energy Shield]",
+      "values": [
+       [
+        "39",
+        0
+       ]
+      ],
+      "displayMode": 0,
+      "type": 18
+     }
+    ],
+    "requirements": [
+     {
+      "name": "Level",
+      "values": [
+       [
+        "54",
+        0
+       ]
+      ],
+      "displayMode": 0,
+      "type": 62
+     },
+     {
+      "name": "[Intelligence|Int]",
+      "values": [
+       [
+        "67",
+        0
+       ]
+      ],
+      "displayMode": 1,
+      "type": 65
+     }
+    ],
+    "explicitMods": [
+     {
+      "description": "Adds 5 to 11 [Cold] damage to [Attack|Attacks]",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_4067062424",
+      "mods": [
+       {
+        "name": "Icy",
+        "tier": "P7",
+        "level": 16,
+        "magnitudes": [
+         {
+          "min": "5",
+          "max": "6"
+         },
+         {
+          "min": "9",
+          "max": "11"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "Adds 1 to 25 [Lightning] damage to [Attack|Attacks]",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_1754445556",
+      "mods": [
+       {
+        "name": "Crackling",
+        "tier": "P6",
+        "level": 33,
+        "magnitudes": [
+         {
+          "min": "1",
+          "max": "1"
+         },
+         {
+          "min": "23",
+          "max": "27"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "+82 to maximum Life",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_3299347043",
+      "mods": [
+       {
+        "name": "Robust",
+        "tier": "P4",
+        "level": 38,
+        "magnitudes": [
+         {
+          "min": "70",
+          "max": "84"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "+27 to [Intelligence|Intelligence]",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_328541901",
+      "mods": [
+       {
+        "name": "of the Sage",
+        "tier": "S3",
+        "level": 55,
+        "magnitudes": [
+         {
+          "min": "25",
+          "max": "27"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "frameType": 2,
+    "frameTypeId": "Rare",
+    "extended": {
+     "es": 47,
+     "es_aug": true,
+     "hashes": {
+      "explicit": [
+       [
+        "explicit.stat_4067062424",
+        [
+         3
+        ]
+       ],
+       [
+        "explicit.stat_1754445556",
+        [
+         0
+        ]
+       ],
+       [
+        "explicit.stat_3299347043",
+        [
+         2
+        ]
+       ],
+       [
+        "explicit.stat_328541901",
+        [
+         1
+        ]
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "140056725c57686524122af456e5a34519e6231d513db1ce9c28b43aa2e2b090",
+   "listing": {
+    "method": "psapi",
+    "indexed": "2026-09-18T01:04:43Z",
+    "stash": {
+     "name": "Stash",
+     "x": 10,
+     "y": 5
+    },
+    "price": {
+     "type": "~b/o",
+     "amount": 1,
+     "currency": "regal"
+    },
+    "fee": 10014,
+    "account": {
+     "name": "Seller4#0004",
+     "online": null
+    },
+    "hideout_token": "scrubbed"
+   },
+   "item": {
+    "realm": "poe2",
+    "verified": true,
+    "w": 2,
+    "h": 2,
+    "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvQmFzZXR5cGVzL0dsb3Zlc0RleEludDAzIiwidyI6MiwiaCI6Miwic2NhbGUiOjEsInJlYWxtIjoicG9lMiJ9XQ/bdc7c3c15d/GlovesDexInt03.png",
+    "league": "Forbidden Rites",
+    "id": "140056725c57686524122af456e5a34519e6231d513db1ce9c28b43aa2e2b090",
+    "name": "Dusk Paw",
+    "typeLine": "Adorned Wraps",
+    "baseType": "Adorned Wraps",
+    "rarity": "Rare",
+    "ilvl": 72,
+    "identified": true,
+    "note": "~b/o 1 regal",
+    "properties": [
+     {
+      "name": "Gloves",
+      "values": [],
+      "displayMode": 0,
+      "type": 109
+     },
+     {
+      "name": "[Evasion|Evasion Rating]",
+      "values": [
+       [
+        "74",
+        0
+       ]
+      ],
+      "displayMode": 0,
+      "type": 17
+     },
+     {
+      "name": "[EnergyShield|Energy Shield]",
+      "values": [
+       [
+        "23",
+        0
+       ]
+      ],
+      "displayMode": 0,
+      "type": 18
+     }
+    ],
+    "requirements": [
+     {
+      "name": "Level",
+      "values": [
+       [
+        "59",
+        0
+       ]
+      ],
+      "displayMode": 0,
+      "type": 62
+     },
+     {
+      "name": "[Dexterity|Dex]",
+      "values": [
+       [
+        "41",
+        0
+       ]
+      ],
+      "displayMode": 1,
+      "type": 64
+     },
+     {
+      "name": "[Intelligence|Int]",
+      "values": [
+       [
+        "41",
+        0
+       ]
+      ],
+      "displayMode": 1,
+      "type": 65
+     }
+    ],
+    "explicitMods": [
+     {
+      "description": "+77 to maximum Life",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_3299347043",
+      "mods": [
+       {
+        "name": "Robust",
+        "tier": "P4",
+        "level": 38,
+        "magnitudes": [
+         {
+          "min": "70",
+          "max": "84"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "+26 to [Intelligence|Intelligence]",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_328541901",
+      "mods": [
+       {
+        "name": "of the Sage",
+        "tier": "S3",
+        "level": 55,
+        "magnitudes": [
+         {
+          "min": "25",
+          "max": "27"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "+12% to [Resistances|Cold Resistance]",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_4220027924",
+      "mods": [
+       {
+        "name": "of the Penguin",
+        "tier": "S7",
+        "level": 14,
+        "magnitudes": [
+         {
+          "min": "11",
+          "max": "15"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "+16% to [Resistances|Chaos Resistance]",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_2923486259",
+      "mods": [
+       {
+        "name": "of Expulsion",
+        "tier": "S3",
+        "level": 56,
+        "magnitudes": [
+         {
+          "min": "16",
+          "max": "19"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "frameType": 2,
+    "frameTypeId": "Rare",
+    "extended": {
+     "ev": 89,
+     "ev_aug": true,
+     "es": 28,
+     "es_aug": true,
+     "hashes": {
+      "explicit": [
+       [
+        "explicit.stat_3299347043",
+        [
+         3
+        ]
+       ],
+       [
+        "explicit.stat_328541901",
+        [
+         2
+        ]
+       ],
+       [
+        "explicit.stat_4220027924",
+        [
+         0
+        ]
+       ],
+       [
+        "explicit.stat_2923486259",
+        [
+         1
+        ]
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "e8d68eca2f1d689f97f05c344a22acaa1c02ae001ecbcee711e98ee3751ccf9a",
+   "listing": {
+    "method": "psapi",
+    "indexed": "2026-09-16T04:42:05Z",
+    "stash": {
+     "name": "Stash",
+     "x": 2,
+     "y": 2
+    },
+    "price": {
+     "type": "~b/o",
+     "amount": 1,
+     "currency": "regal"
+    },
+    "fee": 10886,
+    "account": {
+     "name": "Seller5#0005",
+     "online": null
+    },
+    "hideout_token": "scrubbed"
+   },
+   "item": {
+    "realm": "poe2",
+    "verified": true,
+    "w": 2,
+    "h": 2,
+    "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvQmFzZXR5cGVzL0dsb3Zlc0RleDA1IiwidyI6MiwiaCI6Miwic2NhbGUiOjEsInJlYWxtIjoicG9lMiJ9XQ/b6a93d2794/GlovesDex05.png",
+    "league": "Forbidden Rites",
+    "id": "e8d68eca2f1d689f97f05c344a22acaa1c02ae001ecbcee711e98ee3751ccf9a",
+    "name": "Bramble Grasp",
+    "typeLine": "Spiked Bracers",
+    "baseType": "Spiked Bracers",
+    "rarity": "Rare",
+    "ilvl": 64,
+    "identified": true,
+    "note": "~b/o 1 regal",
+    "properties": [
+     {
+      "name": "Gloves",
+      "values": [],
+      "displayMode": 0,
+      "type": 109
+     },
+     {
+      "name": "[Evasion|Evasion Rating]",
+      "values": [
+       [
+        "135",
+        0
+       ]
+      ],
+      "displayMode": 0,
+      "type": 17
+     }
+    ],
+    "requirements": [
+     {
+      "name": "Level",
+      "values": [
+       [
+        "59",
+        0
+       ]
+      ],
+      "displayMode": 0,
+      "type": 62
+     },
+     {
+      "name": "[Dexterity|Dex]",
+      "values": [
+       [
+        "73",
+        0
+       ]
+      ],
+      "displayMode": 1,
+      "type": 64
+     }
+    ],
+    "explicitMods": [
+     {
+      "description": "+81 to [Accuracy|Accuracy] Rating",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_803737631",
+      "mods": [
+       {
+        "name": "Focused",
+        "tier": "P7",
+        "level": 18,
+        "magnitudes": [
+         {
+          "min": "61",
+          "max": "84"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "+99 to maximum Life",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_3299347043",
+      "mods": [
+       {
+        "name": "Rotund",
+        "tier": "P3",
+        "level": 46,
+        "magnitudes": [
+         {
+          "min": "85",
+          "max": "99"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "17% increased [CriticalDamageBonus|Critical Damage Bonus]",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_3556824919",
+      "mods": [
+       {
+        "name": "of Anger",
+        "tier": "S4",
+        "level": 21,
+        "magnitudes": [
+         {
+          "min": "15",
+          "max": "19"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "+29% to [Resistances|Cold Resistance]",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_4220027924",
+      "mods": [
+       {
+        "name": "of the Walrus",
+        "tier": "S4",
+        "level": 50,
+        "magnitudes": [
+         {
+          "min": "26",
+          "max": "30"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "[ManaLeech|Leech] 6.29% of [Physical] [Attack] Damage as Mana",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_707457662",
+      "mods": [
+       {
+        "name": "of the Arid",
+        "tier": "S3",
+        "level": 38,
+        "magnitudes": [
+         {
+          "min": "6",
+          "max": "6.9"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "frameType": 2,
+    "frameTypeId": "Rare",
+    "extended": {
+     "ev": 162,
+     "ev_aug": true,
+     "hashes": {
+      "explicit": [
+       [
+        "explicit.stat_803737631",
+        [
+         3
+        ]
+       ],
+       [
+        "explicit.stat_3299347043",
+        [
+         4
+        ]
+       ],
+       [
+        "explicit.stat_3556824919",
+        [
+         0
+        ]
+       ],
+       [
+        "explicit.stat_4220027924",
+        [
+         2
+        ]
+       ],
+       [
+        "explicit.stat_707457662",
+        [
+         1
+        ]
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "cd2c3cddf378313c71877c20651e32383e900fd79e4a8ed1f0ee7d77f76d6ae3",
+   "listing": {
+    "method": "psapi",
+    "indexed": "2026-09-16T19:00:51Z",
+    "stash": {
+     "name": "Stash",
+     "x": 4,
+     "y": 10
+    },
+    "price": {
+     "type": "~b/o",
+     "amount": 1,
+     "currency": "regal"
+    },
+    "fee": 4634,
+    "account": {
+     "name": "Seller6#0006",
+     "online": null
+    },
+    "hideout_token": "scrubbed"
+   },
+   "item": {
+    "realm": "poe2",
+    "verified": true,
+    "w": 2,
+    "h": 2,
+    "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvQmFzZXR5cGVzL0dsb3Zlc0RleEludDA0IiwidyI6MiwiaCI6Miwic2NhbGUiOjEsInJlYWxtIjoicG9lMiJ9XQ/f43ef07a0c/GlovesDexInt04.png",
+    "league": "Forbidden Rites",
+    "id": "cd2c3cddf378313c71877c20651e32383e900fd79e4a8ed1f0ee7d77f76d6ae3",
+    "name": "Armageddon Caress",
+    "typeLine": "Buckled Wraps",
+    "baseType": "Buckled Wraps",
+    "rarity": "Rare",
+    "ilvl": 53,
+    "identified": true,
+    "note": "~b/o 1 regal",
+    "properties": [
+     {
+      "name": "Gloves",
+      "values": [],
+      "displayMode": 0,
+      "type": 109
+     },
+     {
+      "name": "[Evasion|Evasion Rating]",
+      "values": [
+       [
+        "58",
+        0
+       ]
+      ],
+      "displayMode": 0,
+      "type": 17
+     },
+     {
+      "name": "[EnergyShield|Energy Shield]",
+      "values": [
+       [
+        "19",
+        0
+       ]
+      ],
+      "displayMode": 0,
+      "type": 18
+     }
+    ],
+    "requirements": [
+     {
+      "name": "Level",
+      "values": [
+       [
+        "45",
+        0
+       ]
+      ],
+      "displayMode": 0,
+      "type": 62
+     },
+     {
+      "name": "[Dexterity|Dex]",
+      "values": [
+       [
+        "32",
+        0
+       ]
+      ],
+      "displayMode": 1,
+      "type": 64
+     },
+     {
+      "name": "[Intelligence|Int]",
+      "values": [
+       [
+        "32",
+        0
+       ]
+      ],
+      "displayMode": 1,
+      "type": 65
+     }
+    ],
+    "explicitMods": [
+     {
+      "description": "Adds 6 to 11 [Physical|Physical] Damage to [Attack|Attacks]",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_3032590688",
+      "mods": [
+       {
+        "name": "Gleaming",
+        "tier": "P5",
+        "level": 46,
+        "magnitudes": [
+         {
+          "min": "5",
+          "max": "7"
+         },
+         {
+          "min": "9",
+          "max": "13"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "+75 to maximum Life",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_3299347043",
+      "mods": [
+       {
+        "name": "Robust",
+        "tier": "P4",
+        "level": 38,
+        "magnitudes": [
+         {
+          "min": "70",
+          "max": "84"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "+20% to [Resistances|Fire Resistance]",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_3372524247",
+      "mods": [
+       {
+        "name": "of the Drake",
+        "tier": "S6",
+        "level": 24,
+        "magnitudes": [
+         {
+          "min": "16",
+          "max": "20"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "+8% to [Resistances|Cold Resistance]",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_4220027924",
+      "mods": [
+       {
+        "name": "of the Seal",
+        "tier": "S8",
+        "magnitudes": [
+         {
+          "min": "6",
+          "max": "10"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "frameType": 2,
+    "frameTypeId": "Rare",
+    "extended": {
+     "ev": 70,
+     "ev_aug": true,
+     "es": 23,
+     "es_aug": true,
+     "hashes": {
+      "explicit": [
+       [
+        "explicit.stat_3032590688",
+        [
+         0
+        ]
+       ],
+       [
+        "explicit.stat_3299347043",
+        [
+         2
+        ]
+       ],
+       [
+        "explicit.stat_3372524247",
+        [
+         1
+        ]
+       ],
+       [
+        "explicit.stat_4220027924",
+        [
+         3
+        ]
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "0894946b3c4dc33b366159a646879f196bd66baa7f3936b19b930e98a3527f3d",
+   "listing": {
+    "method": "psapi",
+    "indexed": "2026-09-13T22:57:23Z",
+    "stash": {
+     "name": "Stash",
+     "x": 4,
+     "y": 10
+    },
+    "price": {
+     "type": "~b/o",
+     "amount": 1,
+     "currency": "regal"
+    },
+    "fee": 17082,
+    "account": {
+     "name": "Seller7#0007",
+     "online": null
+    },
+    "hideout_token": "scrubbed"
+   },
+   "item": {
+    "realm": "poe2",
+    "verified": true,
+    "w": 2,
+    "h": 2,
+    "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvQmFzZXR5cGVzL0dsb3Zlc1N0ckRleDAxIiwidyI6MiwiaCI6Miwic2NhbGUiOjEsInJlYWxtIjoicG9lMiJ9XQ/b26babb5f6/GlovesStrDex01.png",
+    "league": "Forbidden Rites",
+    "id": "0894946b3c4dc33b366159a646879f196bd66baa7f3936b19b930e98a3527f3d",
+    "sockets": [
+     {
+      "group": 0,
+      "type": "rune"
+     }
+    ],
+    "name": "Onslaught Touch",
+    "typeLine": "Steelmail Gauntlets",
+    "baseType": "Steelmail Gauntlets",
+    "rarity": "Rare",
+    "ilvl": 72,
+    "identified": true,
+    "note": "~b/o 1 regal",
+    "properties": [
+     {
+      "name": "Gloves",
+      "values": [],
+      "displayMode": 0,
+      "type": 109
+     },
+     {
+      "name": "[Armour]",
+      "values": [
+       [
+        "89",
+        0
+       ]
+      ],
+      "displayMode": 0,
+      "type": 16
+     },
+     {
+      "name": "[Evasion|Evasion Rating]",
+      "values": [
+       [
+        "81",
+        0
+       ]
+      ],
+      "displayMode": 0,
+      "type": 17
+     }
+    ],
+    "requirements": [
+     {
+      "name": "Level",
+      "values": [
+       [
+        "65",
+        0
+       ]
+      ],
+      "displayMode": 0,
+      "type": 62
+     },
+     {
+      "name": "[Strength|Str]",
+      "values": [
+       [
+        "33",
+        1
+       ]
+      ],
+      "displayMode": 1,
+      "type": 63
+     },
+     {
+      "name": "[Dexterity|Dex]",
+      "values": [
+       [
+        "33",
+        1
+       ]
+      ],
+      "displayMode": 1,
+      "type": 64
+     }
+    ],
+    "explicitMods": [
+     {
+      "description": "Adds 15 to 23 [Cold] damage to [Attack|Attacks]",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_4067062424",
+      "mods": [
+       {
+        "name": "Glaciated",
+        "tier": "P3",
+        "level": 60,
+        "magnitudes": [
+         {
+          "min": "14",
+          "max": "15"
+         },
+         {
+          "min": "22",
+          "max": "24"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "+157 to [Accuracy|Accuracy] Rating",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_803737631",
+      "mods": [
+       {
+        "name": "Consistent",
+        "tier": "P5",
+        "level": 36,
+        "magnitudes": [
+         {
+          "min": "124",
+          "max": "167"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "+116 to maximum Life",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_3299347043",
+      "mods": [
+       {
+        "name": "Virile",
+        "tier": "P2",
+        "level": 54,
+        "magnitudes": [
+         {
+          "min": "100",
+          "max": "119"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "25% reduced [Attributes|Attribute] Requirements",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_3639275092",
+      "mods": [
+       {
+        "name": "of the Talented",
+        "tier": "S3",
+        "level": 40,
+        "magnitudes": [
+         {
+          "min": "-25",
+          "max": "-25"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "Gain 21 Mana per enemy killed",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_1368271171",
+      "mods": [
+       {
+        "name": "of Siphoning",
+        "tier": "S3",
+        "level": 56,
+        "magnitudes": [
+         {
+          "min": "21",
+          "max": "27"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "frameType": 2,
+    "frameTypeId": "Rare",
+    "socketedItems": [],
+    "extended": {
+     "ev": 97,
+     "ev_aug": true,
+     "ar": 107,
+     "ar_aug": true,
+     "hashes": {
+      "explicit": [
+       [
+        "explicit.stat_4067062424",
+        [
+         4
+        ]
+       ],
+       [
+        "explicit.stat_803737631",
+        [
+         2
+        ]
+       ],
+       [
+        "explicit.stat_3299347043",
+        [
+         3
+        ]
+       ],
+       [
+        "explicit.stat_3639275092",
+        [
+         1
+        ]
+       ],
+       [
+        "explicit.stat_1368271171",
+        [
+         0
+        ]
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "5267681f2ec06523a1182624fb7a8a3302b957636a98750fb682134e35bb7544",
+   "listing": {
+    "method": "psapi",
+    "indexed": "2026-09-18T03:54:52Z",
+    "stash": {
+     "name": "Stash",
+     "x": 8,
+     "y": 10
+    },
+    "price": {
+     "type": "~b/o",
+     "amount": 1,
+     "currency": "regal"
+    },
+    "fee": 12671,
+    "account": {
+     "name": "Seller8#0008",
+     "online": null
+    },
+    "hideout_token": "scrubbed"
+   },
+   "item": {
+    "realm": "poe2",
+    "verified": true,
+    "w": 2,
+    "h": 2,
+    "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvQmFzZXR5cGVzL0dsb3Zlc0ludDA1IiwidyI6MiwiaCI6Miwic2NhbGUiOjEsInJlYWxtIjoicG9lMiJ9XQ/b273510d40/GlovesInt05.png",
+    "league": "Forbidden Rites",
+    "id": "5267681f2ec06523a1182624fb7a8a3302b957636a98750fb682134e35bb7544",
+    "name": "Dusk Touch",
+    "typeLine": "Gold Gloves",
+    "baseType": "Gold Gloves",
+    "rarity": "Rare",
+    "ilvl": 70,
+    "identified": true,
+    "note": "~b/o 1 regal",
+    "properties": [
+     {
+      "name": "Gloves",
+      "values": [],
+      "displayMode": 0,
+      "type": 109
+     },
+     {
+      "name": "[EnergyShield|Energy Shield]",
+      "values": [
+       [
+        "42",
+        0
+       ]
+      ],
+      "displayMode": 0,
+      "type": 18
+     }
+    ],
+    "requirements": [
+     {
+      "name": "Level",
+      "values": [
+       [
+        "59",
+        0
+       ]
+      ],
+      "displayMode": 0,
+      "type": 62
+     },
+     {
+      "name": "[Intelligence|Int]",
+      "values": [
+       [
+        "73",
+        0
+       ]
+      ],
+      "displayMode": 1,
+      "type": 65
+     }
+    ],
+    "explicitMods": [
+     {
+      "description": "+108 to maximum Life",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_3299347043",
+      "mods": [
+       {
+        "name": "Virile",
+        "tier": "P2",
+        "level": 54,
+        "magnitudes": [
+         {
+          "min": "100",
+          "max": "119"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "+33 to maximum Mana",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_1050105434",
+      "mods": [
+       {
+        "name": "Azure",
+        "tier": "P7",
+        "level": 16,
+        "magnitudes": [
+         {
+          "min": "25",
+          "max": "34"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "+9 to [Dexterity|Dexterity]",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_3261801346",
+      "mods": [
+       {
+        "name": "of the Lynx",
+        "tier": "S8",
+        "level": 11,
+        "magnitudes": [
+         {
+          "min": "9",
+          "max": "12"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "+27% to [Resistances|Lightning Resistance]",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_1671376347",
+      "mods": [
+       {
+        "name": "of the Tempest",
+        "tier": "S4",
+        "level": 49,
+        "magnitudes": [
+         {
+          "min": "26",
+          "max": "30"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "[ManaLeech|Leech] 7.38% of [Physical] [Attack] Damage as Mana",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_707457662",
+      "mods": [
+       {
+        "name": "of the Drought",
+        "tier": "S2",
+        "level": 54,
+        "magnitudes": [
+         {
+          "min": "7",
+          "max": "7.9"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "frameType": 2,
+    "frameTypeId": "Rare",
+    "extended": {
+     "es": 50,
+     "es_aug": true,
+     "hashes": {
+      "explicit": [
+       [
+        "explicit.stat_3299347043",
+        [
+         1
+        ]
+       ],
+       [
+        "explicit.stat_1050105434",
+        [
+         0
+        ]
+       ],
+       [
+        "explicit.stat_3261801346",
+        [
+         4
+        ]
+       ],
+       [
+        "explicit.stat_1671376347",
+        [
+         3
+        ]
+       ],
+       [
+        "explicit.stat_707457662",
+        [
+         2
+        ]
+       ]
+      ]
+     }
+    }
+   }
+  },
+  {
+   "id": "036c3baf9dec7fcbad5adb96853b3b7e1b82ed1d46c76a641cc1e1901cb8d36d",
+   "listing": {
+    "method": "psapi",
+    "indexed": "2026-09-18T02:45:33Z",
+    "stash": {
+     "name": "Stash",
+     "x": 0,
+     "y": 6
+    },
+    "price": {
+     "type": "~b/o",
+     "amount": 1,
+     "currency": "regal"
+    },
+    "fee": 10708,
+    "account": {
+     "name": "Seller9#0009",
+     "online": null
+    },
+    "hideout_token": "scrubbed"
+   },
+   "item": {
+    "realm": "poe2",
+    "verified": true,
+    "w": 2,
+    "h": 2,
+    "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvQmFzZXR5cGVzL0dsb3Zlc0RleEludDAyIiwidyI6MiwiaCI6Miwic2NhbGUiOjEsInJlYWxtIjoicG9lMiJ9XQ/e226df102d/GlovesDexInt02.png",
+    "league": "Forbidden Rites",
+    "id": "036c3baf9dec7fcbad5adb96853b3b7e1b82ed1d46c76a641cc1e1901cb8d36d",
+    "name": "Brimstone Touch",
+    "typeLine": "Elegant Wraps",
+    "baseType": "Elegant Wraps",
+    "rarity": "Rare",
+    "ilvl": 76,
+    "identified": true,
+    "note": "~b/o 1 regal",
+    "properties": [
+     {
+      "name": "Gloves",
+      "values": [],
+      "displayMode": 0,
+      "type": 109
+     },
+     {
+      "name": "[Evasion|Evasion Rating]",
+      "values": [
+       [
+        "85",
+        0
+       ]
+      ],
+      "displayMode": 0,
+      "type": 17
+     },
+     {
+      "name": "[EnergyShield|Energy Shield]",
+      "values": [
+       [
+        "26",
+        0
+       ]
+      ],
+      "displayMode": 0,
+      "type": 18
+     }
+    ],
+    "requirements": [
+     {
+      "name": "Level",
+      "values": [
+       [
+        "70",
+        0
+       ]
+      ],
+      "displayMode": 0,
+      "type": 62
+     },
+     {
+      "name": "[Dexterity|Dex]",
+      "values": [
+       [
+        "48",
+        0
+       ]
+      ],
+      "displayMode": 1,
+      "type": 64
+     },
+     {
+      "name": "[Intelligence|Int]",
+      "values": [
+       [
+        "48",
+        0
+       ]
+      ],
+      "displayMode": 1,
+      "type": 65
+     }
+    ],
+    "explicitMods": [
+     {
+      "description": "Adds 9 to 16 [Fire] damage to [Attack|Attacks]",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_1573130764",
+      "mods": [
+       {
+        "name": "Burning",
+        "tier": "P6",
+        "level": 33,
+        "magnitudes": [
+         {
+          "min": "9",
+          "max": "11"
+         },
+         {
+          "min": "14",
+          "max": "17"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "Adds 1 to 25 [Lightning] damage to [Attack|Attacks]",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_1754445556",
+      "mods": [
+       {
+        "name": "Crackling",
+        "tier": "P6",
+        "level": 33,
+        "magnitudes": [
+         {
+          "min": "1",
+          "max": "1"
+         },
+         {
+          "min": "23",
+          "max": "27"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "+93 to maximum Life",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_3299347043",
+      "mods": [
+       {
+        "name": "Rotund",
+        "tier": "P3",
+        "level": 46,
+        "magnitudes": [
+         {
+          "min": "85",
+          "max": "99"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "description": "+22 to [Intelligence|Intelligence]",
+      "domain": "explicit",
+      "hash": "stat.explicit.stat_328541901",
+      "mods": [
+       {
+        "name": "of the Philosopher",
+        "tier": "S4",
+        "level": 44,
+        "magnitudes": [
+         {
+          "min": "21",
+          "max": "24"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "frameType": 2,
+    "frameTypeId": "Rare",
+    "extended": {
+     "ev": 102,
+     "ev_aug": true,
+     "es": 31,
+     "es_aug": true,
+     "hashes": {
+      "explicit": [
+       [
+        "explicit.stat_1573130764",
+        [
+         1
+        ]
+       ],
+       [
+        "explicit.stat_1754445556",
+        [
+         2
+        ]
+       ],
+       [
+        "explicit.stat_3299347043",
+        [
+         3
+        ]
+       ],
+       [
+        "explicit.stat_328541901",
+        [
+         0
+        ]
+       ]
+      ]
+     }
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+name: Idea
+description: Something the extension could do better.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What would help
+      description: What you are trying to find or do on the trade site, and what gets in the way.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: How it could work
+      description: Optional. A sketch, a screenshot of the site or of another tool.

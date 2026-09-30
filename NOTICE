@@ -1,0 +1,34 @@
+poe2perfect trade
+Copyright (C) 2026 ReSenpai
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public
+License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later
+version. See the LICENSE file for the full text.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied
+warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Name and logo
+-------------
+The name "poe2perfect trade" and its logo are not covered by the GPL. Forks and modified versions must use a different
+name and logo so they are not mistaken for this extension.
+
+Unofficial project
+------------------
+poe2perfect trade is an unofficial fan project. It is not affiliated with or endorsed by Grinding Gear Games.
+Path of Exile is a trademark of Grinding Gear Games. Listings, item cards, item images and the site's fonts shown by the
+extension come from pathofexile.com at run time and belong to their owners; they are not part of this program.
+
+Game data
+---------
+data/base-stats.json (which trade stats each kind of item can have) is built from repoe-fork
+(https://github.com/repoe-fork/repoe, MIT License, Copyright (c) 2016 brather1ng) and the trade site's public stat list.
+The game data itself is owned by Grinding Gear Games and is used in accordance with their terms.
+
+Third-party components included in the built extension
+------------------------------------------------------
+- Preact 10 — MIT License — https://github.com/preactjs/preact
+- Lucide icons (lucide-preact) — ISC License — https://github.com/lucide-icons/lucide
+- Inter font (via @fontsource-variable/inter) — SIL Open Font License 1.1 — https://github.com/rsms/inter
+- WXT runtime utilities, @wxt-dev/storage, @wxt-dev/browser — MIT License — https://github.com/wxt-dev/wxt
+- @webext-core/isolated-element — MIT License — https://github.com/aklinker1/webext-core

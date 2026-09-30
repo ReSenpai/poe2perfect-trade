@@ -1,0 +1,222 @@
+/*
+ * Scrollbars in the UI palette for every scroll container inside the shadow root. WebKit pseudo-elements rather
+ * than scrollbar-color: Chrome on Windows keeps arrow buttons with the standard properties.
+ */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 2px solid transparent;
+  border-radius: 999px;
+  background: var(--scrollbar-thumb) padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-thumb-hover);
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483646;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  color: var(--text);
+  font: 14px/20px var(--font);
+}
+
+
+.overlay__body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+}
+
+.overlay__status {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+  color: var(--text-muted);
+}
+
+/* Says what the wait is about when the site keeps the guide waiting. */
+.overlay__progress {
+  flex-basis: 100%;
+  color: var(--text-disabled);
+  font-size: 12px;
+  text-align: center;
+}
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 800ms linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.button {
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-control);
+  background: transparent;
+  color: var(--text);
+  font: 500 13px/20px var(--font);
+  cursor: pointer;
+}
+
+.button:hover {
+  background: var(--surface-hover);
+}
+
+.button:focus-visible,
+.launcher:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.button--accent {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.button--accent:hover {
+  background: var(--accent-soft);
+}
+
+.launcher {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 2147483646;
+  padding: 10px 16px;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--accent);
+  font: 600 13px/20px var(--font);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.launcher:hover {
+  background: var(--surface);
+}
+
+.notice {
+  max-width: 560px;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+}
+
+.notice__title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.notice__text {
+  margin: 8px 0 16px;
+  color: var(--text-muted);
+}
+
+.notice__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Motion is decoration only: drop every transition and animation (the loading spinner included) when asked to. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius-control);
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition:
+    color 120ms,
+    background-color 120ms;
+}
+
+.icon-button:hover {
+  background: var(--surface-hover);
+  color: var(--text);
+}
+
+.icon-button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 0;
+}
+
+/* ACTIVE FILTERS and other small caps section labels. */
+.section-label {
+  margin: 0 0 8px;
+  color: var(--text-muted);
+  font: 600 11px/16px var(--font);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.active-filters__empty {
+  margin: 0;
+  color: var(--text-disabled);
+  font-size: 13px;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+/* Firefox has no ::-webkit-scrollbar: the same palette through the standard properties, only where they are needed. */
+@supports not selector(::-webkit-scrollbar) {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-thumb) transparent;
+  }
+}
