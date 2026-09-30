@@ -87,6 +87,9 @@ jobs:
         # "-----BEGIN" reads as a flag, and the command prints its usage instead of submitting (and still exits 0).
         run: |
           set -o pipefail
+          # A key pasted from the JSON file keeps its quotes and "\n" escapes: make it plain PEM text.
+          key="${CHROME_SERVICE_ACCOUNT_PRIVATE_KEY#\"}"
+          export CHROME_SERVICE_ACCOUNT_PRIVATE_KEY="$(printf '%b' "${key%\"}")"
           npx wxt submit \
             --chrome-api-version v2 \
             --chrome-zip ".output/poe2perfect-trade-$VERSION-chrome.zip" \
