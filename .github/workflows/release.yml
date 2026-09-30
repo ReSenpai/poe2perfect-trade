@@ -83,14 +83,18 @@ jobs:
         if: env.PRERELEASE == 'false' && vars.PUBLISH_CHROME == 'true'
         env:
           CHROME_SERVICE_ACCOUNT_PRIVATE_KEY: ${{ secrets.CHROME_SERVICE_ACCOUNT_PRIVATE_KEY }}
+        # The private key goes in its environment variable, which wxt submit reads: as an argument its leading
+        # "-----BEGIN" reads as a flag, and the command prints its usage instead of submitting (and still exits 0).
         run: |
+          set -o pipefail
           npx wxt submit \
             --chrome-api-version v2 \
             --chrome-zip ".output/poe2perfect-trade-$VERSION-chrome.zip" \
             --chrome-extension-id "${{ vars.CHROME_EXTENSION_ID }}" \
             --chrome-publisher-id "${{ vars.CHROME_PUBLISHER_ID }}" \
             --chrome-service-account-client-email "${{ vars.CHROME_SERVICE_ACCOUNT_EMAIL }}" \
-            --chrome-service-account-private-key "$CHROME_SERVICE_ACCOUNT_PRIVATE_KEY"
+            2>&1 | tee submit.log
+          if grep -q '^Usage:' submit.log; then echo "::error::wxt submit did not run"; exit 1; fi
 
       - name: Submit to Firefox Add-ons (listed)
         if: env.PRERELEASE == 'false' && vars.PUBLISH_FIREFOX == 'true'
