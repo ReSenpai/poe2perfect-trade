@@ -7,7 +7,7 @@ coverage/
 .env*
 CLAUDE.local.md
 
-# Store graphics: rebuild with scripts/make-store-assets.py
-store/*.png
+# Store publishing notes stay local; the store graphics are in git (rebuild with scripts/make-store-assets.py)
+store/*.md
 store/raw/
 __pycache__/

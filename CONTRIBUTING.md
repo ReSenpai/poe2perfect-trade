@@ -63,7 +63,7 @@ tokens are replaced. `tests/fixtures/fixtures.test.ts` checks that; please keep 
 ## Screenshots and store graphics
 
 `python scripts/make-store-assets.py` (Pillow, numpy) builds the store screenshots, promo tiles and icon into `store/`
-(not in git) and the README images into `docs/images/` from raw captures in `store/raw/`: 1568×710 captures of the
+and the README images into `docs/images/` from raw captures in `store/raw/`: 1568×710 captures of the
 workspace on the sample search. Replace seller, account and character names with neutral ones before capturing.
 
 ## Releases

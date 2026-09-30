@@ -2,7 +2,7 @@
 
 Put the raw captures in store/raw (named as in SHOTS below: the workspace on the sample search, seller names replaced
 with neutral ones before capture), then run:  python scripts/make-store-assets.py
-Needs Pillow and numpy. Writes store/*.png (not in git) and docs/images/*.jpg (used by the README).
+Needs Pillow and numpy. Writes store/*.png and docs/images/*.jpg (used by the README).
 """
 
 import os
