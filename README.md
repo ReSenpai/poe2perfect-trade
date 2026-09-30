@@ -7,6 +7,8 @@ site's own item cards. Every search runs when you ask for it, and never on its o
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
 
+![The workspace: filters for a rare ring on the left, the site's item cards with the searched stats marked on the right](docs/images/1-workspace.jpg)
+
 ## What does it do?
 
 - **Filters that read like the item you want.** "Find a ring": category, rarity and base in one row, a budget in a
@@ -25,6 +27,39 @@ site's own item cards. Every search runs when you ask for it, and never on its o
   did not search yet survive a reload.
 - **Trade from the list.** Direct whisper, Travel to hideout or copy the whisper — one click, only when you press it.
 - **The original is one click away** — with your unsearched changes, if you have any.
+
+## Features
+
+### Either, or — and never this
+
+Any parameter can be required, joined into alternatives ("Match at least 2 of 3") or excluded (Must not have) from
+its own menu. Each has its colour and icon, a slider with an optional maximum, and Total, Explicit or Implicit.
+
+![Life required, two of three resistances, and chaos resistance excluded](docs/images/2-parameters.jpg)
+
+### The site's own item cards
+
+Listings look as the trade site draws them — frames, sockets, mod tiers — with the stats you searched for marked in
+their colour and roll ranges on hover. Click any line of a card to sort the results by it, or the price to sort by
+price; the next listings load as you scroll.
+
+![Results sorted by maximum Life, with a roll range shown on hover](docs/images/3-cards.jpg)
+
+### Compare two listings
+
+Tick Compare on two listings to see their price, the searched stats and every other property side by side, with the
+difference.
+
+![Two rings compared: price, Life and resistances side by side](docs/images/4-compare.jpg)
+
+### And also
+
+- **Saved searches** by name; Back and Forward walk your searches; unsearched changes survive a reload.
+- **How parameters work**: a built-in guide to stat sources (Total, Explicit, Implicit) and the three ways to match.
+
+![Saved searches](docs/images/5-saved.jpg)
+
+![How parameters work: stat sources on the left, match modes on the right](docs/images/6-help.jpg)
 
 ## Installation
 

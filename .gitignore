@@ -10,3 +10,4 @@ CLAUDE.local.md
 # Store graphics: rebuild with scripts/make-store-assets.py
 store/*.png
 store/raw/
+__pycache__/
