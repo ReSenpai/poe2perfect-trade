@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.1
+
+- Firefox: a new add-on id (`poe2perfect-trade@resenpai.dev`) for the listing on Firefox Add-ons. If you installed a
+  Firefox beta, remove it and install the extension from Firefox Add-ons.
+
 ## 1.1.0
 
 Firefox support, alternatives and exclusions, and a lot of polish. Everything from the two betas below:

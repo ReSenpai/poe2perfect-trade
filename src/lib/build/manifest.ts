@@ -4,7 +4,7 @@
  */
 
 /** The Firefox add-on id: fixed forever, a new id would be a new add-on on addons.mozilla.org. */
-export const FIREFOX_ID = 'poe2perfect-trade@resenpai';
+export const FIREFOX_ID = 'poe2perfect-trade@resenpai.dev';
 
 const SITE = ['https://www.pathofexile.com/*', 'https://pathofexile.com/*'];
 

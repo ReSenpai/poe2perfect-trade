@@ -6,7 +6,16 @@ describe('manifestFor', () => {
     expect(manifestFor('firefox').browser_specific_settings).toEqual({
       gecko: { id: FIREFOX_ID, strict_min_version: '140.0', data_collection_permissions: { required: ['none'] } },
     });
-    expect(FIREFOX_ID).toBe('poe2perfect-trade@resenpai');
+    // poe2perfect-trade@resenpai belonged to an add-on deleted on addons.mozilla.org: AMO never gives a deleted id again.
+    expect(FIREFOX_ID).toBe('poe2perfect-trade@resenpai.dev');
+  });
+
+  it('is the id the release workflows submit to addons.mozilla.org', async () => {
+    const { readFileSync } = await import('node:fs');
+    for (const workflow of ['release', 'store-check']) {
+      const text = readFileSync(`.github/workflows/${workflow}.yml`, 'utf8');
+      expect(text).toContain(`--firefox-extension-id "${FIREFOX_ID}"`);
+    }
   });
 
   it('keeps the same name, permissions and extension files in every browser, Chrome without Firefox settings', () => {

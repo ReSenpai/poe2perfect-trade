@@ -1,6 +1,6 @@
 {
   "name": "poe2perfect-trade",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "private": true,
   "description": "A clean two-pane workspace for the Path of Exile 2 trade site",
   "license": "GPL-3.0-or-later",

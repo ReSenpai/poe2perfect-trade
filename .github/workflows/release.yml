@@ -98,7 +98,7 @@ jobs:
           npx wxt submit \
             --firefox-zip ".output/poe2perfect-trade-$VERSION-firefox.zip" \
             --firefox-sources-zip ".output/poe2perfect-trade-$VERSION-sources.zip" \
-            --firefox-extension-id "poe2perfect-trade@resenpai" \
+            --firefox-extension-id "poe2perfect-trade@resenpai.dev" \
             --firefox-channel listed \
             --firefox-jwt-issuer "$AMO_JWT_ISSUER" \
             --firefox-jwt-secret "$AMO_JWT_SECRET"
