@@ -1,6 +1,8 @@
 # Changelog
 
-## Unreleased
+## 1.1.0-beta.2
+
+The second beta: Firefox joins Chrome.
 
 - Firefox (140 or newer): the same extension, built from the same source; requests go to the trade site as the page.
 - The chosen category picture shows beside the list where the browser has no picture list (Firefox); thin scrollbars
