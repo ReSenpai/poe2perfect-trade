@@ -46,14 +46,16 @@ jobs:
 
       - name: Sign for Firefox (unlisted)
         if: env.AMO_JWT_ISSUER != ''
-        run: >
-          npx --yes web-ext@8 sign
-          --channel unlisted
-          --source-dir .output/firefox-mv3
-          --artifacts-dir .output/signed
-          --upload-source-code ".output/poe2perfect-trade-$VERSION-sources.zip"
-          --api-key "$AMO_JWT_ISSUER"
-          --api-secret "$AMO_JWT_SECRET"
+        run: |
+          npx --yes web-ext@8 sign \
+            --channel unlisted \
+            --source-dir .output/firefox-mv3 \
+            --artifacts-dir .output/signed \
+            --upload-source-code ".output/poe2perfect-trade-$VERSION-sources.zip" \
+            --api-key "$AMO_JWT_ISSUER" \
+            --api-secret "$AMO_JWT_SECRET"
+          # AMO names the file by an internal id; testers get it by the extension's name.
+          mv .output/signed/*.xpi ".output/signed/poe2perfect-trade-$VERSION-firefox.xpi"
 
       - name: GitHub release
         env:

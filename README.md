@@ -68,9 +68,8 @@ The extension is on its way to the Chrome Web Store and Firefox Add-ons. Until t
 
 - **Chrome** (and Edge, Brave, Opera): download `poe2perfect-trade-<version>-chrome.zip`, unzip it, open
   `chrome://extensions`, turn on **Developer mode**, click **Load unpacked** and pick the unzipped folder.
-- **Firefox** (140 or newer): install the signed `.xpi` from the release when there is one; otherwise open
-  `about:debugging#/runtime/this-firefox`, click **Load Temporary Add-on** and pick `manifest.json` from the unzipped
-  `poe2perfect-trade-<version>-firefox.zip` (it stays until Firefox restarts).
+- **Firefox** (140 or newer): download `poe2perfect-trade-<version>-firefox.xpi` (signed by Mozilla) and open it in
+  Firefox — drop it onto a Firefox window or choose it in `about:addons` → ⚙ → **Install Add-on From File**.
 
 Then open any search on [the PoE 2 trade site](https://www.pathofexile.com/trade2/search/poe2). Searching works
 whether or not you are signed in; whispers and travel need you signed in, as on the site.
