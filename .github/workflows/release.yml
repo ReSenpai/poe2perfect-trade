@@ -1,9 +1,16 @@
 name: Release
 
 # A tag v<version> (v1.2.0, or v1.2.0-beta.1 for a pre-release) builds the Chrome and Firefox packages and the sources
-# archive and publishes them as a GitHub release, with the version's section of CHANGELOG.md as its notes. With the
-# AMO_JWT_ISSUER and AMO_JWT_SECRET secrets set, the Firefox package is also signed on addons.mozilla.org (unlisted)
-# and the signed .xpi is attached, for testers.
+# archive and publishes them as a GitHub release, with the version's section of CHANGELOG.md as its notes.
+#
+# Pre-releases: with the AMO_JWT_ISSUER and AMO_JWT_SECRET secrets set, the Firefox package is signed on
+# addons.mozilla.org (unlisted) and the signed .xpi is attached, for testers.
+#
+# Releases: each store gets the new version for review once it is switched on by a repository variable —
+#   Chrome Web Store: PUBLISH_CHROME=true, variables CHROME_EXTENSION_ID, CHROME_PUBLISHER_ID,
+#                     CHROME_SERVICE_ACCOUNT_EMAIL and the secret CHROME_SERVICE_ACCOUNT_PRIVATE_KEY (API v2);
+#   Firefox Add-ons:  PUBLISH_FIREFOX=true and the AMO secrets above (listed channel).
+# The first version in each store is published by hand; the "Check store access" workflow tests the keys.
 
 on:
   push:
@@ -34,6 +41,7 @@ jobs:
             exit 1
           fi
           echo "VERSION=$version" >> "$GITHUB_ENV"
+          case "$version" in *-*) echo "PRERELEASE=true" >> "$GITHUB_ENV" ;; *) echo "PRERELEASE=false" >> "$GITHUB_ENV" ;; esac
 
       - name: Release notes from CHANGELOG.md
         run: node scripts/release-notes.mjs "$VERSION" > release-notes.md
@@ -44,8 +52,9 @@ jobs:
       - run: npm run zip:firefox
       - run: npx --yes web-ext@8 lint --source-dir .output/firefox-mv3
 
-      - name: Sign for Firefox (unlisted)
-        if: env.AMO_JWT_ISSUER != ''
+      # Only pre-releases: a release's version number goes to the listed channel, and AMO takes each number once.
+      - name: Sign for Firefox testers (unlisted)
+        if: env.PRERELEASE == 'true' && env.AMO_JWT_ISSUER != ''
         run: |
           npx --yes web-ext@8 sign \
             --channel unlisted \
@@ -64,8 +73,32 @@ jobs:
           shopt -s nullglob
           files=(.output/*-chrome.zip .output/*-firefox.zip .output/*-sources.zip .output/signed/*.xpi)
           flags=()
-          case "$VERSION" in *-*) flags+=(--prerelease) ;; esac
+          if [ "$PRERELEASE" = true ]; then flags+=(--prerelease); fi
           gh release create "$GITHUB_REF_NAME" "${files[@]}" \
             --title "poe2perfect trade $VERSION" \
             --notes-file release-notes.md \
             "${flags[@]}"
+
+      - name: Submit to the Chrome Web Store
+        if: env.PRERELEASE == 'false' && vars.PUBLISH_CHROME == 'true'
+        env:
+          CHROME_SERVICE_ACCOUNT_PRIVATE_KEY: ${{ secrets.CHROME_SERVICE_ACCOUNT_PRIVATE_KEY }}
+        run: |
+          npx wxt submit \
+            --chrome-api-version v2 \
+            --chrome-zip ".output/poe2perfect-trade-$VERSION-chrome.zip" \
+            --chrome-extension-id "${{ vars.CHROME_EXTENSION_ID }}" \
+            --chrome-publisher-id "${{ vars.CHROME_PUBLISHER_ID }}" \
+            --chrome-service-account-client-email "${{ vars.CHROME_SERVICE_ACCOUNT_EMAIL }}" \
+            --chrome-service-account-private-key "$CHROME_SERVICE_ACCOUNT_PRIVATE_KEY"
+
+      - name: Submit to Firefox Add-ons (listed)
+        if: env.PRERELEASE == 'false' && vars.PUBLISH_FIREFOX == 'true'
+        run: |
+          npx wxt submit \
+            --firefox-zip ".output/poe2perfect-trade-$VERSION-firefox.zip" \
+            --firefox-sources-zip ".output/poe2perfect-trade-$VERSION-sources.zip" \
+            --firefox-extension-id "poe2perfect-trade@resenpai" \
+            --firefox-channel listed \
+            --firefox-jwt-issuer "$AMO_JWT_ISSUER" \
+            --firefox-jwt-secret "$AMO_JWT_SECRET"

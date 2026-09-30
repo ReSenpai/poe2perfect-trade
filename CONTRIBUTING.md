@@ -71,10 +71,15 @@ workspace on the sample search. Replace seller, account and character names with
 1. Raise `version` in `package.json` and add its section to [CHANGELOG.md](CHANGELOG.md).
 2. Tag the commit `v<version>` (`v1.2.0`, or `v1.2.0-beta.1` for a pre-release) and push the tag.
 3. The Release workflow checks that the tag matches `package.json`, takes the notes from the version's CHANGELOG
-   section, builds the Chrome and Firefox packages and the sources archive and attaches them to a GitHub release (a
-   pre-release for `-beta.N` / `-rc.N`). With the `AMO_JWT_ISSUER` and `AMO_JWT_SECRET` repository secrets
-   (addons.mozilla.org → Developer Hub → Manage API Keys) it also signs the Firefox package, unlisted, and attaches
-   the `.xpi`. The store uploads follow from there.
+   section, builds the Chrome and Firefox packages and the sources archive and attaches them to a GitHub release.
+   - A pre-release (`-beta.N` / `-rc.N`) is a GitHub pre-release; with the `AMO_JWT_ISSUER` and `AMO_JWT_SECRET`
+     secrets (addons.mozilla.org → Developer Hub → Manage API Keys) the Firefox package is signed, unlisted, and the
+     `.xpi` attached for testers.
+   - A release goes to the stores for review, each once its repository variable is `true`: `PUBLISH_CHROME` (with
+     the variables `CHROME_EXTENSION_ID`, `CHROME_PUBLISHER_ID`, `CHROME_SERVICE_ACCOUNT_EMAIL` and the secret
+     `CHROME_SERVICE_ACCOUNT_PRIVATE_KEY`, Chrome Web Store API v2) and `PUBLISH_FIREFOX` (the AMO secrets, listed
+     channel). The first version in a store is published by hand; **Actions → Check store access** tests the keys
+     without uploading anything.
 
 addons.mozilla.org takes digit-only versions, each once: a pre-release is numbered just below its release in Firefox
 (`1.1.0-beta.2` → `1.0.999.2`, `src/lib/build/manifest.ts`), while Chrome shows it as `version_name`.
