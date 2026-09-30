@@ -1,11 +1,14 @@
 import preact from '@preact/preset-vite';
 import { defineConfig } from 'wxt';
+import { readFileSync } from 'node:fs';
 import { manifestFor } from './src/lib/build/manifest';
+
+const { version } = JSON.parse(readFileSync('package.json', 'utf8')) as { version: string };
 
 export default defineConfig({
   srcDir: 'src',
   // One manifest for Chrome and Firefox; Firefox adds its id and settings (src/lib/build/manifest.ts).
-  manifest: ({ browser }) => manifestFor(browser),
+  manifest: ({ browser }) => manifestFor(browser, version),
   // Manifest V3 in Firefox too (WXT builds MV2 for it by default): the same manifest rules in both browsers.
   manifestVersion: 3,
   // The sources ZIP for addons.mozilla.org review: what builds the extension, not design material or notes.

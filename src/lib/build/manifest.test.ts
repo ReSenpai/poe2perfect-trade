@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { FIREFOX_ID, manifestFor } from './manifest';
+import { FIREFOX_ID, firefoxVersion, manifestFor } from './manifest';
 
 describe('manifestFor', () => {
   it('gives the Firefox build its lasting id, the Firefox it needs and no data collection', () => {
@@ -18,6 +18,42 @@ describe('manifestFor', () => {
       expect(manifest.permissions).toEqual(['storage']);
       expect(manifest.web_accessible_resources).toEqual([{ resources: ['data/base-stats.json', 'category/*'], matches: ['https://www.pathofexile.com/*', 'https://pathofexile.com/*'] }]);
     }
+  });
+});
+
+describe('firefoxVersion', () => {
+  it('keeps a release as it is', () => {
+    expect(firefoxVersion('1.1.0')).toBe('1.1.0');
+    expect(firefoxVersion('2.0.3')).toBe('2.0.3');
+  });
+
+  it('numbers a pre-release just below its release, digits only as addons.mozilla.org requires', () => {
+    expect(firefoxVersion('1.1.0-beta.1')).toBe('1.0.999.1');
+    expect(firefoxVersion('1.1.0-beta.12')).toBe('1.0.999.12');
+    expect(firefoxVersion('1.2.3-rc.2')).toBe('1.2.2.2');
+    expect(firefoxVersion('2.0.0-beta.1')).toBe('1.999.999.1');
+  });
+
+  it('orders every beta before its release and after the release before it', () => {
+    const order = ['1.0.0', '1.1.0-beta.1', '1.1.0-beta.2', '1.1.0', '1.1.1-beta.1', '1.1.1'].map(firefoxVersion);
+    const compare = (a: string, b: string) => {
+      const [x, y] = [a, b].map((v) => v.split('.').map(Number));
+      for (let i = 0; i < 4; i++) if ((x![i] ?? 0) !== (y![i] ?? 0)) return (x![i] ?? 0) - (y![i] ?? 0);
+      return 0;
+    };
+    expect([...order].sort(compare)).toEqual(order);
+  });
+
+  it('refuses a version it cannot number', () => {
+    expect(() => firefoxVersion('1.1')).toThrow();
+    expect(() => firefoxVersion('1.1.0-beta')).toThrow();
+  });
+});
+
+describe('the Firefox manifest version', () => {
+  it('comes from the package version; Chrome keeps it with its version_name', () => {
+    expect(manifestFor('firefox', '1.1.0-beta.1').version).toBe('1.0.999.1');
+    expect(manifestFor('chrome', '1.1.0-beta.1').version).toBeUndefined();
   });
 });
 

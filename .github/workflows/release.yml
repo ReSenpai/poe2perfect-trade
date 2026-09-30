@@ -1,0 +1,69 @@
+name: Release
+
+# A tag v<version> (v1.2.0, or v1.2.0-beta.1 for a pre-release) builds the Chrome and Firefox packages and the sources
+# archive and publishes them as a GitHub release, with the version's section of CHANGELOG.md as its notes. With the
+# AMO_JWT_ISSUER and AMO_JWT_SECRET secrets set, the Firefox package is also signed on addons.mozilla.org (unlisted)
+# and the signed .xpi is attached, for testers.
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      AMO_JWT_ISSUER: ${{ secrets.AMO_JWT_ISSUER }}
+      AMO_JWT_SECRET: ${{ secrets.AMO_JWT_SECRET }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      - name: The tag is the version in package.json
+        run: |
+          version=$(node -p "require('./package.json').version")
+          if [ "v$version" != "$GITHUB_REF_NAME" ]; then
+            echo "::error::Tag $GITHUB_REF_NAME does not match package.json version $version"
+            exit 1
+          fi
+          echo "VERSION=$version" >> "$GITHUB_ENV"
+
+      - name: Release notes from CHANGELOG.md
+        run: node scripts/release-notes.mjs "$VERSION" > release-notes.md
+
+      - run: npm test
+      - run: npm run typecheck
+      - run: npm run zip
+      - run: npm run zip:firefox
+      - run: npx --yes web-ext@8 lint --source-dir .output/firefox-mv3
+
+      - name: Sign for Firefox (unlisted)
+        if: env.AMO_JWT_ISSUER != ''
+        run: >
+          npx --yes web-ext@8 sign
+          --channel unlisted
+          --source-dir .output/firefox-mv3
+          --artifacts-dir .output/signed
+          --upload-source-code ".output/poe2perfect-trade-$VERSION-sources.zip"
+          --api-key "$AMO_JWT_ISSUER"
+          --api-secret "$AMO_JWT_SECRET"
+
+      - name: GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          shopt -s nullglob
+          files=(.output/*-chrome.zip .output/*-firefox.zip .output/*-sources.zip .output/signed/*.xpi)
+          flags=()
+          case "$VERSION" in *-*) flags+=(--prerelease) ;; esac
+          gh release create "$GITHUB_REF_NAME" "${files[@]}" \
+            --title "poe2perfect trade $VERSION" \
+            --notes-file release-notes.md \
+            "${flags[@]}"
