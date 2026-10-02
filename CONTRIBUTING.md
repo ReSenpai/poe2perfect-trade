@@ -81,5 +81,10 @@ workspace on the sample search. Replace seller, account and character names with
      channel). The first version in a store is published by hand; **Actions → Check store access** tests the keys
      without uploading anything.
 
+4. While a release waits for review on addons.mozilla.org, give Firefox users a signed `.xpi` of it: **Actions → Sign
+   the Firefox package → Run workflow** (use the workflow from the release's tag, build `1`). It signs the same code
+   unlisted under a fourth number (`1.1.1` → `1.1.1.1`) and attaches the `.xpi` to the release.
+
 addons.mozilla.org takes digit-only versions, each once: a pre-release is numbered just below its release in Firefox
-(`1.1.0-beta.2` → `1.0.999.2`, `src/lib/build/manifest.ts`), while Chrome shows it as `version_name`.
+(`1.1.0-beta.2` → `1.0.999.2`) and a signed build of a release just above it (`1.1.1.1`, `src/lib/build/manifest.ts`),
+while Chrome shows a pre-release as `version_name`.

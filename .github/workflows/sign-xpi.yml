@@ -1,0 +1,81 @@
+name: Sign the Firefox package
+
+# Run by hand (Actions → Sign the Firefox package → Run workflow) to give Firefox users an installable add-on while
+# the listed version waits for review on addons.mozilla.org.
+#
+# addons.mozilla.org signs a listed version only once it has been reviewed, but signs an unlisted one straight away —
+# and it takes each version number once per add-on. So this signs the same code under a fourth number (1.1.1 → 1.1.1.1,
+# FIREFOX_BUILD), unlisted, and attaches the signed .xpi to the release of that version. Raise "build" to sign again.
+#
+# Needs the AMO_JWT_ISSUER and AMO_JWT_SECRET secrets. Nothing is submitted for review and no listed version changes.
+
+on:
+  workflow_dispatch:
+    inputs:
+      build:
+        description: Build number for this signing (raise it to sign the same version again)
+        required: true
+        default: '1'
+      tag:
+        description: Release tag to attach the .xpi to (blank = the release of the version in package.json)
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  sign:
+    runs-on: ubuntu-latest
+    env:
+      AMO_JWT_ISSUER: ${{ secrets.AMO_JWT_ISSUER }}
+      AMO_JWT_SECRET: ${{ secrets.AMO_JWT_SECRET }}
+      FIREFOX_BUILD: ${{ inputs.build }}
+    steps:
+      # Signs the code of the branch or tag chosen in "Use workflow from": pick the release's tag (once it carries this
+      # workflow), or main while main has no changes since that release.
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      - name: The version being signed
+        run: |
+          if [ -z "$AMO_JWT_ISSUER" ]; then
+            echo "::error::AMO_JWT_ISSUER and AMO_JWT_SECRET are not set: nothing to sign with"
+            exit 1
+          fi
+          version=$(node -p "require('./package.json').version")
+          echo "VERSION=$version" >> "$GITHUB_ENV"
+          tag="${{ inputs.tag }}"
+          echo "TAG=${tag:-v$version}" >> "$GITHUB_ENV"
+
+      - run: npm run zip:firefox
+      - run: npx --yes web-ext@8 lint --source-dir .output/firefox-mv3
+
+      - name: The package carries the build number
+        run: |
+          signed=$(node -p "require('./.output/firefox-mv3/manifest.json').version")
+          echo "Firefox manifest version: $signed"
+          case "$signed" in *".$FIREFOX_BUILD") ;; *) echo "::error::$signed does not end in the build number $FIREFOX_BUILD"; exit 1 ;; esac
+
+      - name: Sign unlisted on addons.mozilla.org
+        run: |
+          npx --yes web-ext@8 sign \
+            --channel unlisted \
+            --source-dir .output/firefox-mv3 \
+            --artifacts-dir .output/signed \
+            --upload-source-code ".output/poe2perfect-trade-$VERSION-sources.zip" \
+            --api-key "$AMO_JWT_ISSUER" \
+            --api-secret "$AMO_JWT_SECRET"
+          # AMO names the file by an internal id; users get it by the extension's name.
+          mv .output/signed/*.xpi ".output/signed/poe2perfect-trade-$VERSION-firefox.xpi"
+
+      - name: Attach it to the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release upload "$TAG" ".output/signed/poe2perfect-trade-$VERSION-firefox.xpi" --clobber
+          echo "### Signed $VERSION (build $FIREFOX_BUILD) and attached it to $TAG" >> "$GITHUB_STEP_SUMMARY"
