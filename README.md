@@ -5,6 +5,8 @@
 The trade search page turns into two panes: what you are looking for on the left, the listings on the right, with the
 site's own item cards. Every search runs when you ask for it, and never on its own.
 
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/v/idigjgiogahobcghmikbejpbnhinmnfe?label=Chrome%20Web%20Store&logo=googlechrome&logoColor=white)](https://chromewebstore.google.com/detail/poe2perfect-trade/idigjgiogahobcghmikbejpbnhinmnfe)
+[![Firefox Add-ons](https://img.shields.io/amo/v/poe2perfect-trade?label=Firefox%20Add-ons&logo=firefoxbrowser&logoColor=white)](https://addons.mozilla.org/firefox/addon/poe2perfect-trade/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
 
 ![The workspace: filters for a rare ring on the left, the site's item cards with the searched stats marked on the right](docs/images/1-workspace.jpg)
@@ -63,17 +65,28 @@ difference.
 
 ## Installation
 
-The extension is on its way to the Chrome Web Store and Firefox Add-ons. Until then, take the latest build from
-[Releases](https://github.com/ReSenpai/poe2perfect-trade/releases):
-
-- **Chrome** (and Edge, Brave, Opera): download `poe2perfect-trade-<version>-chrome.zip`, unzip it, open
-  `chrome://extensions`, turn on **Developer mode**, click **Load unpacked** and pick the unzipped folder.
-- **Firefox** (140 or newer): download `poe2perfect-trade-<version>-firefox.xpi` (signed by Mozilla), open
-  `about:addons` → ⚙ → **Install Add-on From File** and pick it. If you install it straight from Firefox's download
-  prompt instead, the extension may only start once you open `about:addons` (or confirm the "added" notification).
+- **Chrome** (and Edge, Brave, Opera):
+  **[Add poe2perfect trade from the Chrome Web Store](https://chromewebstore.google.com/detail/poe2perfect-trade/idigjgiogahobcghmikbejpbnhinmnfe)**
+- **Firefox** (140 or newer):
+  **[Add poe2perfect trade from Firefox Add-ons](https://addons.mozilla.org/firefox/addon/poe2perfect-trade/)**
 
 Then open any search on [the PoE 2 trade site](https://www.pathofexile.com/trade2/search/poe2). Searching works
 whether or not you are signed in; whispers and travel need you signed in, as on the site.
+
+<details>
+<summary>Installing a build from GitHub instead (betas, or a version still in store review)</summary>
+
+Every version is also on the [Releases](https://github.com/ReSenpai/poe2perfect-trade/releases) page:
+
+- **Chrome**: download `poe2perfect-trade-<version>-chrome.zip`, unzip it, open `chrome://extensions`, turn on
+  **Developer mode**, click **Load unpacked** and pick the unzipped folder.
+- **Firefox**: download `poe2perfect-trade-<version>-firefox.xpi` (signed by Mozilla), open `about:addons` → ⚙ →
+  **Install Add-on From File** and pick it. Installed straight from Firefox's download prompt, the extension may only
+  start once you open `about:addons`.
+
+Remove a store copy first: two copies of the extension on one page get in each other's way.
+
+</details>
 
 ## Searches and the rate limit
 
